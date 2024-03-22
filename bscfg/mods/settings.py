@@ -82,7 +82,8 @@ availableEffects = {'ice': 500,
                     'slime': 500,
                     'metal': 500,
                     'surrounder': 1000,
-                    'tag': 0}
+                    'tag': 0,
+                    'footprint': 750}
 
 nameOnPowerUps = False  # Whether or not to show the powerup's name on top of powerups
 

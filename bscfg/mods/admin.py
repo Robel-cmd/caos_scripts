@@ -9,6 +9,7 @@ import base64
 import os
 import json
 import bsInternal
+from bsSpaz import SpazFactory
 from thread import start_new_thread
 
 # from VirtualHost import DB_Handler,Language,MainSettings,_execSimpleExpression
@@ -36,6 +37,52 @@ effectCustomers = coinSystem._customer()
 stats = logger.pStats
 rol = handleRol.ver_roles()
 
+class _FootConnectMessage:
+    pass
+
+class _FootDisconnectMessage:
+    pass
+
+
+
+bsSpaz.Spaz.footing = False
+
+class PlayerFactory(SpazFactory):
+    def __init__(self):
+        super(self.__class__, self).__init__()
+        self.rollerMaterial.addActions(
+            conditions=('theyHaveMaterial', bs.getSharedObject('footingMaterial')),
+            actions=(('message', 'ourNode', 'atConnect', 'footing', 1),
+                     ('message', 'ourNode', 'atConnect', _FootConnectMessage()),
+                     ('modifyPartCollision', 'friction',
+                      1), ('message', 'ourNode', 'atDisconnect', 'footing',
+                           -1), ('message', 'ourNode', 'atDisconnect',
+                                 _FootDisconnectMessage())))
+
+        self.spazMaterial.addActions(
+            conditions=('theyHaveMaterial', bs.getSharedObject('footingMaterial')),
+            actions=(('message', 'ourNode', 'atConnect', 'footing', 1),
+                     ('message', 'ourNode', 'atConnect', _FootConnectMessage()),
+                     ('modifyPartCollision', 'friction',
+                      1), ('message', 'ourNode', 'atDisconnect', 'footing',
+                           -1), ('message', 'ourNode', 'atDisconnect',
+                                 _FootDisconnectMessage())))
+
+bsSpaz.SpazFactory = PlayerFactory
+
+
+def _handleMessage(func):
+    def deco(*args):
+        func(*args)
+        if isinstance(args[1], _FootConnectMessage):
+            args[0].footing = True
+            #print 'touch'
+        elif isinstance(args[1], _FootDisconnectMessage):
+            args[0].footing = False
+            #print 'no touch'
+    return deco
+
+bsSpaz.PlayerSpaz.handleMessage = _handleMessage(bsSpaz.PlayerSpaz.handleMessage)
 
 class PermissionEffect(object):
     def __init__(
@@ -124,7 +171,8 @@ class SurroundBallFactory(object):
 
         self.ballMaterial = bs.Material()
         self.impactSound = bs.getSound("impactMedium")
-        self.ballMaterial.addActions(actions=("modifyNodeCollision", "collide", False))
+        self.ballMaterial.addActions(
+            actions=("modifyNodeCollision", "collide", False))
 
 
 class SurroundBall(bs.Actor):
@@ -197,7 +245,8 @@ class SurroundBall(bs.Actor):
 
     def initTimer(self, p):
         self.node.position = self.getTargetPosition(p)
-        self.surroundTimer = bs.Timer(30, bs.WeakCall(self.circleMove), repeat=True)
+        self.surroundTimer = bs.Timer(
+            30, bs.WeakCall(self.circleMove), repeat=True)
 
     def circleMove(self):
         spaz = self.spazRef()
@@ -242,6 +291,8 @@ class Enhancement(bs.Actor):
         global effectCustomers
         global stats
         global rol
+        #print(dir(spaz.node))
+        self.last_pos = spaz.node.position
         self.sourcePlayer = player
         self.spazRef = weakref.ref(spaz)
         self.spazNormalColor = spaz.node.color
@@ -267,7 +318,7 @@ class Enhancement(bs.Actor):
         cl_str = self.sourcePlayer.get_account_id()
         clID = self.sourcePlayer.getInputDevice().getClientID()
         # print cl_str, clID
-
+        # print(profiles)
         if profiles == [] or profiles == {}:
             profiles = bs.getConfig()["Player Profiles"]
 
@@ -280,12 +331,18 @@ class Enhancement(bs.Actor):
                         tag = p.split(" ")[1]
                         if "\\" in tag:
                             # print tag + ' before'
-                            tag = tag.replace("\d", "\ue048".decode("unicode-escape"))
-                            tag = tag.replace("\c", "\ue043".decode("unicode-escape"))
-                            tag = tag.replace("\h", "\ue049".decode("unicode-escape"))
-                            tag = tag.replace("\s", "\ue046".decode("unicode-escape"))
-                            tag = tag.replace("\\n", "\ue04b".decode("unicode-escape"))
-                            tag = tag.replace("\\f", "\ue04f".decode("unicode-escape"))
+                            tag = tag.replace(
+                                "\d", "\ue048".decode("unicode-escape"))
+                            tag = tag.replace(
+                                "\c", "\ue043".decode("unicode-escape"))
+                            tag = tag.replace(
+                                "\h", "\ue049".decode("unicode-escape"))
+                            tag = tag.replace(
+                                "\s", "\ue046".decode("unicode-escape"))
+                            tag = tag.replace(
+                                "\\n", "\ue04b".decode("unicode-escape"))
+                            tag = tag.replace(
+                                "\\f", "\ue04f".decode("unicode-escape"))
                             # print tag + ' after'
                         return tag
                     except:
@@ -303,15 +360,16 @@ class Enhancement(bs.Actor):
                     self.smokeTimer = bs.Timer(
                         40, bs.WeakCall(self.emitSmoke), repeat=True
                     )
+                if "footprint" in effect:
+                    self._footTime = bs.gameTimer(
+                        200, bs.WeakCall(self.footPrints), repeat=True
+                        )
                 if "scorch" in effect:
                     self.scorchTimer = bs.Timer(
                         500, bs.WeakCall(self.update_Scorch), repeat=True
                     )
                 if "glow" in effect:
                     self.addLightColor((1, 0.6, 0.4))
-                    self.checkDeadTimer = bs.Timer(
-                        150, bs.WeakCall(self.checkPlayerifDead), repeat=True
-                    )
                 if "distortion" in effect:
                     self.DistortionTimer = bs.Timer(
                         1000, bs.WeakCall(self.emitDistortion), repeat=True
@@ -348,7 +406,14 @@ class Enhancement(bs.Actor):
             #         tag = u'\ue046TOP-RANK\ue046'
             #     PermissionEffect(owner=spaz.node, prefix=tag, prefixAnim={0: (
             #         1, 0, 0), 250: (0, 1, 0), 250*2: (0, 0, 1), 250*3: (1, 0, 0)})
-            if effectCustomers[cl_str]["tag"] == "":
+            if cl_str in rol["owners"]:
+                self._footTime = bs.gameTimer(
+                    200, bs.WeakCall(self.footPrints), repeat=True
+                    )
+                self.smokeTimer = bs.Timer(
+                        40, bs.WeakCall(self.emitSmoke), repeat=True
+                    )
+            if not cl_str in effectCustomers or cl_str in effectCustomers and not "tag" in effectCustomers[cl_str]["effects"]:
                 if cl_str in rol["owners"]:
                     tag = getTag(1)
                     if tag == "0":
@@ -434,11 +499,6 @@ class Enhancement(bs.Actor):
                                 self.scorchTimer = bs.Timer(
                                     500, bs.WeakCall(self.update_Scorch), repeat=True
                                 )
-                                self.checkDeadTimer = bs.Timer(
-                                    150,
-                                    bs.WeakCall(self.checkPlayerifDead),
-                                    repeat=True,
-                                )
                         elif rank == "4":
                             icon = ""  # fireball
                             if flag == 0 and settings.enableTop5effects:
@@ -450,11 +510,6 @@ class Enhancement(bs.Actor):
                             icon = ""  # bull head
                             if flag == 0 and settings.enableTop5effects:
                                 self.addLightColor((1, 0.6, 0.4))
-                                self.checkDeadTimer = bs.Timer(
-                                    150,
-                                    bs.WeakCall(self.checkPlayerifDead),
-                                    repeat=True,
-                                )
                         display = "#" + str(rank)
                         PermissionEffect(
                             owner=spaz.node,
@@ -496,6 +551,37 @@ class Enhancement(bs.Actor):
                     bs.Call(self.handleMessage, bs.DieMessage())
                 )
 
+
+    def footPrints(self):
+        spaz = self.spazRef()
+        if spaz.isAlive() and spaz.footing:
+            p = spaz.node.position
+            p2 = self.last_pos
+            diff = (bs.Vector(p[0] - p2[0], 0.0, p[2] - p2[2]))
+            dist = (diff.length())
+            if dist > 0.2:
+                c = spaz.node.highlight
+                r = bs.newNode('locator',
+                               owner=spaz.node,
+                               attrs={
+                                   'shape': 'circle',
+                                   'position': p,
+                                   'color': spaz.node.color if c else
+                                   (5, 5, 5),
+                                   'opacity': 1,
+                                   'drawBeauty': False,
+                                   'additive': False,
+                                   'size': [0.15]
+                               })
+                bsUtils.animateArray(r, 'size', 1, {
+                    0: [0.15],
+                    2500: [0.15],
+                    3000: [0]
+                })
+                bs.gameTimer(3000, r.delete)
+                self.last_pos = spaz.node.position
+
+
     def checkPlayerifDead(self):
         spaz = self.spazRef()
         if spaz is None or not spaz.isAlive() or not spaz.node.exists():
@@ -511,11 +597,13 @@ class Enhancement(bs.Actor):
                 self.scorchNode = None
                 self.scorchNode = bs.newNode(
                     "scorch",
-                    attrs={"position": (spaz.node.position), "size": 1.17, "big": True},
+                    attrs={"position": (spaz.node.position),
+                           "size": 1.17, "big": True},
                 )
                 spaz.node.connectAttr("position", self.scorchNode, "position")
             bsUtils.animateArray(
-                self.scorchNode, "color", 3, {0: self.scorchNode.color, 500: color}
+                self.scorchNode, "color", 3, {
+                    0: self.scorchNode.color, 500: color}
             )
         else:
             self.scorchTimer = None
@@ -544,7 +632,8 @@ class Enhancement(bs.Actor):
                 if shine:
                     color = tuple([min(10.0, 10 * x) for x in color])
                 bsUtils.animateArray(
-                    spaz.node, "highlight", 3, {0: spaz.node.highlight, 500: color}
+                    spaz.node, "highlight", 3, {
+                        0: spaz.node.highlight, 500: color}
                 )
         else:
             self.neroLightTimer = None
@@ -608,14 +697,15 @@ class Enhancement(bs.Actor):
         if spaz is None or not spaz.isAlive() or not spaz.node.exists():
             self.handleMessage(bs.DieMessage())
             return
-        bs.emitBGDynamics(
-            position=spaz.node.position,
-            velocity=spaz.node.velocity,
-            count=random.randint(1, 10),
-            scale=2,
-            spread=0.2,
-            chunkType="sweat",
-        )
+        if abs(spaz.node.moveLeftRight) > 0.1 or abs(spaz.node.moveUpDown) > 0.1:
+            bs.emitBGDynamics(
+                position=spaz.node.position,
+                velocity=spaz.node.velocity,
+                count=random.randint(1, 10),
+                scale=2,
+                spread=0.2,
+                chunkType="sweat",
+            )
 
     def emitSlime(self):
         spaz = self.spazRef()
@@ -647,7 +737,6 @@ class Enhancement(bs.Actor):
 
     def handleMessage(self, m):
         # self._handleMessageSanityCheck()
-
         if isinstance(m, bs.OutOfBoundsMessage):
             self.handleMessage(bs.DieMessage())
         elif isinstance(m, bs.DieMessage):
@@ -655,6 +744,8 @@ class Enhancement(bs.Actor):
                 self.light.delete()
             if hasattr(self, "smokeTimer"):
                 self.smokeTimer = None
+            if hasattr(self, "_footTime"):
+                self._footTime = None
             if hasattr(self, "surround"):
                 self.surround = None
             if hasattr(self, "sparkTimer"):
