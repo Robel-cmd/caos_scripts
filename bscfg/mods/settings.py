@@ -108,7 +108,7 @@ dist = (('tripleBombs', 2),
         ('Troll', 1),
         ('Bot', 0),
         ('Rchar', 0),
-        ('Bunny', 1),
+        ('Bunny', 0),
         ('Tunner', 0))
 
 
