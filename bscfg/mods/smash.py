@@ -29,7 +29,7 @@ class Icon(bsElimination.Icon):
 class PowBox(bsBomb.Bomb):
     def __init__(self, position=(0, 1, 0), velocity=(0, 0, 0)):
         bsBomb.Bomb.__init__(self, position, velocity,
-                             bombType='landMine', blastRadius=4.0,
+                             bombType='tnt', blastRadius=4.0,
                              sourcePlayer=None, owner=None)
         self.setPowText()
 

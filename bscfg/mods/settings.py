@@ -39,8 +39,11 @@ gameTexts = ['Welcome To Blitz Server', 'Use "/shop commands" to see commands av
     'ticket')+' and your stats in this server', 'Use "/buy" to buy effects that you like', 'Use "/donate" to give some of your tickets to other players', 'Use "/scoretocash" to convert some of your score to '+bs.getSpecialChar('ticket')+'\nCurrent Rate: 5scores = '+bs.getSpecialChar('ticket')+'1']
 
 questionDelay = 90  # 60 #seconds
-questionsList = {'Que fruta se come en nochevieja?': 'uvas', 'Que les dejamos a los reyes magos?': 'turrones y agua', 'Nombre del tercer rey mago?': 'Baltasar', 'Dulce hecho de almendras, miel y azucar. Tambien se puede hacer de chocolate.': 'turron',
-                 'Que empresa suele utilizar a Papa Noel en su marketing?': 'coca-cola',
+questionsList = {u'\u00bfQui\u00e9n ser\u00e1, qui\u00e9n ser\u00e1, un hombre vestido de rojo, que viene en Navidad?': 'papa noel', 
+        u'\u00bfUna vieja con un diente que llama a toda la gente?': 'campana', 
+        u'\u00bfIba una vaca de lado, luego result\u00f3 ser pescado.?': 'bacalao', 
+        u'\u00bfTiene dientes y no come, tiene cabeza y no es una persona?': 'ajo',
+        u'\u00bfQu\u00e9 empresa suele utilizar a Pap\u00e1 Noel en su marketing?': 'Coca cola',
                  'add': None,
                  'multiply': None}
 
@@ -63,7 +66,7 @@ availableCommands = {'nv': 50,
                      'thawall': 70,
                      'kill': 800,
                      'killall': 1050,
-                     'end': 250,
+                     'end': 200,
                      'hug': 60,
                      'hugall': 100,
                      'tint': 999999,
@@ -72,18 +75,18 @@ availableCommands = {'nv': 50,
                      'flyall': 1000,
                      'heal': 50,
                      'healall': 70,
-                     'gm': 1000}
+                     'gm': 800}
 
 availableEffects = {'ice': 500,
-                    'sweat': 750,
+                    'sweat': 500,
                     'scorch': 500,
                     'glow': 400,
-                    'distortion': 750,
+                    'distortion': 500,
                     'slime': 500,
                     'metal': 500,
-                    'surrounder': 1000,
+                    'surrounder': 500,
                     'tag': 0,
-                    'footprint': 750}
+                    'footprint': 550}
 
 nameOnPowerUps = False  # Whether or not to show the powerup's name on top of powerups
 
@@ -108,7 +111,7 @@ dist = (('tripleBombs', 2),
         ('Troll', 1),
         ('Bot', 0),
         ('Rchar', 0),
-        ('Bunny', 1),
+        ('Bunny', 0),
         ('Tunner', 0))
 
 

@@ -6,9 +6,9 @@ import bs
 #Msg List
 allow = True
 
-messageList = ['El caos esta en todas partes', 'no pidas rol', "unete al discord"]
+messageList = ['No Spam', 'No Pedir Roles']
 #Msg Timer 
-chatMessageTime = 80 #seconds
+chatMessageTime = 110 #seconds
 #Change According To U
 
 #colors
