@@ -296,32 +296,6 @@ class chatOptions(object):
                     else:
                         cmdsetg.tN(a[0], a[1])
                         commandSuccess = True
-
-                elif m == 'addcoin' and level > 4:
-                    if a == []:
-                        bs.screenMessage(
-                            "Format: /addcoin <clientID> <amount> or /addcoin <amount> for myself")
-                    
-                        message = ""
-                    elif len(a) == 1:
-                            n = accountIDFromClientID(clientID)
-                            coin = coinSystem.getCoins(n)
-                            coinSystem.addCoins(n, int(a[0]))
-                            message = "Se han Depositado {} a tu Banco.".format(a[0])
-                    else:
-                        try:
-                            n = accountIDFromClientID(int(a[0]))
-                            n2 = playerFromClientID(a[0])
-                            coinSystem.addCoins(n, int(a[0]))
-                            message = "Se han Depositado {} Para {}.".format(a[1], n2.getName())
-                        except IndexError:
-                            message = "player not found"
-                            return
-                    
-                    bs.screenMessage(message, transient=True, clients=[clientID])
-                            
-                        
-
                 elif m == 'floater' and level > 2:
                     playerlist = bsInternal._getForegroundHostActivity(
                     ).players
@@ -479,7 +453,7 @@ class chatOptions(object):
                             if haveCoins >= costOfEffect:
                                 customers = storage.customers
                                 from datetime import datetime, timedelta
-                                expiry = datetime.now() + timedelta(days=1)
+                                expiry = datetime.now() + timedelta(days=7)
                                 
                                 if client_str not in customers:
                                     customers[client_str] = {
