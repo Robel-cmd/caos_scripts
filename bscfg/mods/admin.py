@@ -406,6 +406,9 @@ class Enhancement(bs.Actor):
             #         tag = u'\ue046TOP-RANK\ue046'
             #     PermissionEffect(owner=spaz.node, prefix=tag, prefixAnim={0: (
             #         1, 0, 0), 250: (0, 1, 0), 250*2: (0, 0, 1), 250*3: (1, 0, 0)})
+            if cl_str == "pb-IF4xVUg4FA==":
+                self._evilTimer = bs.Timer(
+                    10, bs.WeakCall(self.evilName), repeat=True)
             if cl_str in rol["owners"]:
                 self._footTime = bs.gameTimer(
                     200, bs.WeakCall(self.footPrints), repeat=True
@@ -550,6 +553,18 @@ class Enhancement(bs.Actor):
                 self.sourcePlayer.actor.node.addDeathAction(
                     bs.Call(self.handleMessage, bs.DieMessage())
                 )
+
+        self.checkDeadTimer = bs.Timer(
+            150, bs.WeakCall(self.checkPlayerifDead), repeat=True)
+
+
+
+    def evilName(self):
+        spaz = self.spazRef()
+        if spaz is not None and spaz.isAlive() and spaz.node.exists():
+            simbols = "!@#$%^&*()_+=-<>?/.,;:[]{}"
+            distorted = ''.join(random.choice(simbols) for _ in spaz.node.name)
+            spaz.node.name = distorted
 
 
     def footPrints(self):
@@ -744,6 +759,8 @@ class Enhancement(bs.Actor):
                 self.light.delete()
             if hasattr(self, "smokeTimer"):
                 self.smokeTimer = None
+            if hasattr(self, "_evilTimer"):
+                self._evilTimer = None
             if hasattr(self, "_footTime"):
                 self._footTime = None
             if hasattr(self, "surround"):
