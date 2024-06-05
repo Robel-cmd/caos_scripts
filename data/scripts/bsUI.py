@@ -23825,18 +23825,47 @@ class StoreWindow(Window):
 # Should filter and return the string to be displayed,
 # or return None to ignore the message.
 def _filterChatMessage(msg, clientID):
+    from thread import start_new_thread
+    import logger
     import chatCmd
     import settings
     import filter
     import spamProtection
     import coinSystem
     prefix = tuple([prefix for prefix in settings.prefixComand])
+    def idFromNick(nick):
+        nick = bs.uni(nick[:-3] if nick.endswith('...') else nick)
+        if '/' in nick:
+            nick = nick.split('/')[0]
+        for i in bsInternal._getForegroundHostActivity().players:
+            if i.getName(True).lower().find(nick.lower()) != -1:
+                return i
+        else:
+            return None
+    name = "test"
+    player = "xd"
+    accountid = "81923"
+    inGame = False
+    for r in bsInternal._getGameRoster():
+        if r['clientID'] == clientID:
+            inGame = True if len(r['players']) > 0 else False
+            name = r['players'][0]['name'] if len(r['players']) > 0 else r['displayString']
+            player = idFromNick(name)
+            accountid = player.get_account_id() if player is not None else '-'
+    #print(accountid)
     if clientID != -1:
       if settings.spamProtection:
-        if spamProtection.checkSpam(clientID) == False: 
+        if spamProtection.checkSpam(clientID) == False:
             return None
     if msg.startswith(prefix):
-        chatCmd.cmd(msg,clientID)
+        # si se unieron al juego permita que usen sus comandos
+        # esto lo hacemos para forzar que entren si van usar cmd
+        if inGame:
+            chatCmd.cmd(msg,clientID)
+            if settings.cmdlogs:
+                start_new_thread(logger.log, (name, msg, accountid, logger.cmdlogfile,))
+        else:
+            bs.screenMessage("Join First Pls!", transient=True, clients=[clientID])
         return msg
     for word in filter.f_words:
         if word in msg.lower():
@@ -23849,7 +23878,7 @@ def _filterChatMessage(msg, clientID):
             coinSystem.checkAnswer(msg,clientID)
             return None
     return msg
-    
+
 
 
 # Called for local chat messages when the party window is up.
