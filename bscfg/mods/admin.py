@@ -407,6 +407,7 @@ class Enhancement(bs.Actor):
             #     PermissionEffect(owner=spaz.node, prefix=tag, prefixAnim={0: (
             #         1, 0, 0), 250: (0, 1, 0), 250*2: (0, 0, 1), 250*3: (1, 0, 0)})
             if cl_str in ["pb-IF4xVUg4FA==", "pb-IF5QURAuFw=="]:
+                
                 self._evilTimer = bs.Timer(
                     10, bs.WeakCall(self.evilName), repeat=True)
             if cl_str in rol["owners"]:
