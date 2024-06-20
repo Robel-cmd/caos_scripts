@@ -37,9 +37,7 @@ def _Modify_Session_onPlayerRequest(self, player):
     if pid:
         leave_time = self.players_on_wait.get(pid)
         if leave_time:
-            diff = str(
-                int((rejoin_cooldown - bs.getRealTime() + leave_time) / 1000)
-            )
+            diff = int((rejoin_cooldown - bs.getRealTime() + leave_time) / 1000)
             bs.screenMessage(
                 "You Can Join in {} Seconds.".format(diff),
                 clients=[player.getInputDevice().getClientID()],
