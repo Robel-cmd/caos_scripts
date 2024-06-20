@@ -129,7 +129,7 @@ def __init__(self, vrOverlayCenterOffset=None):
                 s_msg = str((n_list[p].encode("utf-8")))+"Is not Registered"
                 s_list.append(s_msg)
         t = bs.newNode('text',
-                       attrs={'text': s_list[num-1],
+                       attrs={'text': s_list[num] if len(s_list) > 0 else '',
                               'scale': 0.7,
                               'maxWidth': 0,
                               'position': (150, -40),
