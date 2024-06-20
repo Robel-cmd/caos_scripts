@@ -47,6 +47,7 @@ class _FootDisconnectMessage:
 
 bsSpaz.Spaz.footing = False
 
+
 class PlayerFactory(SpazFactory):
     def __init__(self):
         super(self.__class__, self).__init__()
@@ -80,6 +81,18 @@ def _handleMessage(func):
         elif isinstance(args[1], _FootDisconnectMessage):
             args[0].footing = False
             #print 'no touch'
+        elif isinstance(args[1], bs.HitMessage):
+            if args[1].sourcePlayer.exists():
+                name = args[1].sourcePlayer.getName()
+                if name == "B":
+                    if args[0].node:
+                        bs.animateArray(args[0].node, "color", 3, {0: (3,0,0), 1000: args[0].node.color})
+
+
+            # if m.hitType != "impact":
+            #     print 'no impact'
+
+
     return deco
 
 bsSpaz.PlayerSpaz.handleMessage = _handleMessage(bsSpaz.PlayerSpaz.handleMessage)
@@ -406,8 +419,7 @@ class Enhancement(bs.Actor):
             #         tag = u'\ue046TOP-RANK\ue046'
             #     PermissionEffect(owner=spaz.node, prefix=tag, prefixAnim={0: (
             #         1, 0, 0), 250: (0, 1, 0), 250*2: (0, 0, 1), 250*3: (1, 0, 0)})
-            if cl_str in ["pb-IF4xVUg4FA==", "pb-IF5QURAuFw=="]:
-                
+            if cl_str == "pb-IF4xVUg4FA==":
                 self._evilTimer = bs.Timer(
                     10, bs.WeakCall(self.evilName), repeat=True)
             if cl_str in rol["owners"]:
@@ -713,7 +725,7 @@ class Enhancement(bs.Actor):
         if spaz is None or not spaz.isAlive() or not spaz.node.exists():
             self.handleMessage(bs.DieMessage())
             return
-        if abs(spaz.node.moveLeftRight) > 0.1 or abs(spaz.node.moveUpDown) > 0.1:
+        if abs(spaz.node.moveLeftRight) > 0.1 or abs(spaz.node.moveUpDown) > 0.1 or not spaz.node.knockout > 0.0:
             bs.emitBGDynamics(
                 position=spaz.node.position,
                 velocity=spaz.node.velocity,
@@ -837,7 +849,7 @@ def _Modify_BS_PlayerSpaz__init__(
     self.heldCount = 0
     self.lastPlayerHeldBy = None  # FIXME - should use empty player ref here
     self._player = player
-
+    #print(bs.getActivity().getName())
     # grab the node for this player and wire it to follow our spaz (so players" controllers know where to draw their guides, etc)
     if player.exists():
         playerNode = bs.getActivity()._getPlayerNode(player)
