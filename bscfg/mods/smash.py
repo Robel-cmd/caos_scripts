@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import random
 import bs
 import bsUtils
@@ -5,7 +6,168 @@ import bsElimination
 import bsBomb
 
 
-class Icon(bsElimination.Icon):
+class Icon(bs.Actor):
+    def __init__(self,
+                 player,
+                 position,
+                 scale,
+                 showLives=True,
+                 showDeath=True,
+                 nameScale=1.0,
+                 nameMaxWidth=115.0,
+                 flatness=1.0,
+                 shadow=1.0):
+        bs.Actor.__init__(self)
+
+        self._player = player
+        self._showLives = showLives
+        self._showDeath = showDeath
+        self._nameScale = nameScale
+
+        self._outlineTex = bs.getTexture('characterIconMask')
+
+        icon = player.getIcon()
+        self.node = bs.newNode(
+            'image',
+            owner=self,
+            attrs={
+                'texture': icon['texture'],
+                'tintTexture': icon['tintTexture'],
+                'tintColor': icon['tintColor'],
+                'vrDepth': 400,
+                'tint2Color': icon['tint2Color'],
+                'maskTexture': self._outlineTex,
+                'opacity': 1.0,
+                'absoluteScale': True,
+                'attach': 'bottomCenter'
+            })
+
+        self._bg = bs.newNode(
+            'image',
+            owner=self.node,
+            attrs={
+                'texture': bs.getTexture("null"),
+                'color':bs.getSafeColor(player.getTeam().color),
+                'vrDepth': 400,
+                'opacity': 0.3,
+                'absoluteScale': True,
+                'attach': 'bottomCenter',
+                'rotate': 65
+            })
+        self._bg.connectAttr('opacity', self.node, 'opacity')
+        self._damageText = bs.newNode(
+            'text',
+            owner=self.node,
+            attrs={
+                'text': '0%',
+                'color': (1, 1, 1),
+                'hAlign': 'center',
+                'vAlign': 'center',
+                'vrDepth': 420,
+                'shadow': 1.0,
+                'flatness': 1.0,
+                'hAttach': 'center',
+                'vAttach': 'bottom'
+            })
+        self._nameText = bs.newNode(
+            'text',
+            owner=self.node,
+            attrs={
+                'text': bs.Lstr(value=player.getName()),
+                'color': bs.getSafeColor(player.getTeam().color),
+                'hAlign': 'center',
+                'vAlign': 'center',
+                'vrDepth': 410,
+                'maxWidth': nameMaxWidth,
+                'shadow': shadow,
+                'flatness': flatness,
+                'hAttach': 'center',
+                'vAttach': 'bottom'
+            })
+        if self._showLives:
+            self._livesText = bs.newNode(
+                'text',
+                owner=self.node,
+                attrs={
+                    'text': 'x0',
+                    'color': (1, 1, 0.5),
+                    'hAlign': 'left',
+                    'vrDepth': 430,
+                    'shadow': 1.0,
+                    'flatness': 1.0,
+                    'hAttach': 'center',
+                    'vAttach': 'bottom'
+                })
+        self.setPositionAndScale(position, scale)
+
+    def setPositionAndScale(self, position, scale):
+        xOffset = 10.0
+        iconOffset = 40.0
+
+        self._bg.position = (position[0] + scale * 10.0, position[1])
+        self._bg.scale = [60.0 * scale]
+
+        self.node.position = (position[0] + scale * 10.0, position[1])
+        self.node.scale = [40.0 * scale]
+
+        self._nameText.position = (position[0] + scale * xOffset, position[1] - scale * 35.0)
+        self._nameText.scale = 0.7 * scale * self._nameScale
+
+        self._damageText.position = (position[0] + scale * iconOffset, position[1] - scale * 10.0)
+        self._damageText.scale = 1.2 * scale
+
+        if self._showLives:
+            self._livesText.position = (position[0] + scale * 10.0, position[1] + scale * 25.0)
+            self._livesText.scale = 0.6 * scale
+
+
+    def updatePercent(self, x):
+        if not self._damageText.exists():
+            return
+        self._damageText.text = str(x)+"%"
+        # creditos a chat gpt pora esta parte del cambio dinamico de color XD...
+        WHITE = (1.0, 1.0, 1.0)
+        YELLOW = (1.0, 1.0, 0.0)
+        ORANGE = (1.0, 0.5, 0.0)
+        RED = (1.0, 0.0, 0.0)
+        def interpolate_color(color1, color2, t):
+            return tuple(c1 + (c2 - c1) * t for c1, c2 in zip(color1, color2))
+        def get_damage_color(damage):
+            if damage < 70:
+                return interpolate_color(WHITE, YELLOW, damage / 70.0)
+            elif damage < 250:
+                return interpolate_color(YELLOW, ORANGE, (damage - 70) / (250 - 70))
+            elif damage < 400:
+                return interpolate_color(ORANGE, RED, (damage - 250) / (400 - 250))
+            else:
+                return RED
+        self._damageText.color = get_damage_color(x)
+
+        # if x >= 30:
+        #     c = (1,1,0.4)
+        # elif x > 40 and x <= 50:
+        #     c = (1, 0.9, 0)
+        # elif x > 50 and x <= 60:
+        #     c = (1, 0.8, 0)
+        # elif x > 60 and x <= 70:
+        #     c = (1, 0.7, 0)
+        # elif x > 70 and x <= 80:
+        #     c = (1, 0.6, 0)
+        # elif x > 80 and x <= 90:
+        #     c = (1, 0.5, 0)
+        # elif x > 90 and x <= 100:
+        #     c = (1, 0.4, 0)
+        # elif x > 150 and x <= 200:
+        #     c = (1, 0.3, 0)
+        # elif x > 200 and x <= 250:
+        #     c = (1, 0.2, 0)
+        # elif x > 250 and x <= 300:
+        #     c = (1, 0.1, 0)
+        # elif x >= 300:
+        #     c = (1, 0, 0)
+        # else:
+        #     c = (1, 1, 1)
+
     def updateForLives(self):
         if self._player.exists():
             lives = self._player.gameData['lives']
@@ -13,18 +175,44 @@ class Icon(bsElimination.Icon):
             lives = 0
         if self._showLives:
             if lives > 0:
-                self._livesText.text = 'x' + str(lives - 1)
-            elif lives < 0:
-                self._livesText.text = str(lives)
+                self._livesText.text = u'\ue010' * (lives - 1) if lives < 7 else "x" + str(lives-1)
             else:
                 self._livesText.text = ''
         if lives == 0:
-            if hasattr(bs.getActivity(), 'timeLimitOnly'):
-                if not bs.getActivity().timeLimitOnly:
-                    self._nameText.opacity = 0.2
-                    self.node.color = (0.7, 0.3, 0.3)
-                    self.node.opacity = 0.2
+            self._damageText.text = "0%"
+            self._nameText.opacity = 0.2
+            self.node.color = (0.7, 0.3, 0.3)
+            self.node.opacity = 0.2
 
+    def handlePlayerSpawned(self):
+        if not self.node.exists():
+            return
+        self.node.opacity = 1.0
+        self._damageText.text = "0%"
+        self.updateForLives()
+
+    def handlePlayerDied(self):
+        if not self.node.exists():
+            return
+        if self._showDeath:
+            bs.animate(
+                self.node, 'opacity', {
+                    0: 1.0,
+                    50: 0.0,
+                    100: 1.0,
+                    150: 0.0,
+                    200: 1.0,
+                    250: 0.0,
+                    300: 1.0,
+                    350: 0.0,
+                    400: 1.0,
+                    450: 0.0,
+                    500: 1.0,
+                    550: 0.2
+                })
+            lives = self._player.gameData['lives']
+            if lives == 0:
+                bs.gameTimer(600, self.updateForLives)
 
 class PowBox(bsBomb.Bomb):
     def __init__(self, position=(0, 1, 0), velocity=(0, 0, 0)):
@@ -240,7 +428,11 @@ class PlayerSpaz_Smash(bs.PlayerSpaz):
                 # self.hitPoints -= damage
                 self.multiplyer += min(damage / 2000, 0.15)
                 if damage / 2000 > 0.05:
-                    self.setScoreText(str(int((self.multiplyer - 1) * 100)) + "%")
+                    porcentage = int((self.multiplyer - 1) * 100)
+                    #self.setScoreText(str(int((self.multiplyer - 1) * 100)) + "%")
+                    for icon in self._player.gameData['icons']:
+                        icon.updatePercent(porcentage)
+
                 # self.node.hurt = 1.0 - self.hitPoints/self.hitPointsMax
                 self.node.hurt = 0.0
                 # if we're cursed, *any* damage blows us up
@@ -269,7 +461,9 @@ class PlayerSpaz_Smash(bs.PlayerSpaz):
                 else:
                     self.multiplyer *= 0.75
                 self.multiplyer = max(1, self.multiplyer)
-                self.setScoreText(str(int((self.multiplyer - 1) * 100)) + "%")
+                porcentage = int((self.multiplyer - 1) * 100)
+                for icon in self._player.gameData['icons']:
+                    icon.updatePercent(porcentage)
             super(self.__class__, self).handleMessage(m)
         else:
             super(self.__class__, self).handleMessage(m)
