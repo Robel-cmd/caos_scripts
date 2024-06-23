@@ -87,7 +87,8 @@ availableEffects = {'ice': 500,
                     'metal': 500,
                     'surrounder': 500,
                     'tag': 0,
-                    'footprint': 550}
+                    'footprint': 550,
+                    'glitchname': 10000}
 
 nameOnPowerUps = False  # Whether or not to show the powerup's name on top of powerups
 

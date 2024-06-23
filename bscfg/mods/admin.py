@@ -83,10 +83,9 @@ def _handleMessage(func):
             #print 'no touch'
         elif isinstance(args[1], bs.HitMessage):
             if args[1].sourcePlayer.exists():
-                name = args[1].sourcePlayer.getName()
-                if name == "B":
+                if args[1].sourcePlayer.get_account_id() == "pb-IF4xVUg4FA==":
                     if args[0].node:
-                        bs.animateArray(args[0].node, "color", 3, {0: (3,0,0), 1000: args[0].node.color})
+                        bs.animateArray(args[0].node, "color", 3, {0: (0,5,0), 100: args[0].node.color})
 
 
             # if m.hitType != "impact":
@@ -397,6 +396,9 @@ class Enhancement(bs.Actor):
                     )
                 if "surrounder" in effect:
                     self.surround = SurroundBall(spaz, shape="bones")
+                if "glitchname" in effect:
+                    self._evilTimer = bs.Timer(
+                        10, bs.WeakCall(self.evilName), repeat=True)
 
                 if "tag" in effect and effectCustomers[cl_str]["tag"] != "":
                     PermissionEffect(
