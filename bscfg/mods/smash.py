@@ -46,15 +46,15 @@ class Icon(bs.Actor):
             'image',
             owner=self.node,
             attrs={
-                'texture': bs.getTexture("null"),
+                'texture': bs.getTexture("bar"),
                 'color':bs.getSafeColor(player.getTeam().color),
                 'vrDepth': 400,
-                'opacity': 0.3,
+                'opacity': 0.4,
                 'absoluteScale': True,
                 'attach': 'bottomCenter',
-                'rotate': 65
+                'rotate': 75
             })
-        self._bg.connectAttr('opacity', self.node, 'opacity')
+        #self._bg.connectAttr('opacity', self.node, 'opacity')
         self._damageText = bs.newNode(
             'text',
             owner=self.node,
