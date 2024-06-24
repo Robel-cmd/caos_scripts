@@ -110,7 +110,7 @@ config['ffaSeriesScoreToWin'] = 24
 # currently-signed-in account's id.  To get info about an account,
 # you can use the following url:
 # http://bombsquadgame.com/accountquery?id=ACCOUNT_ID_HERE
-config['statsURL'] = 'https://discord.gg/JkjREPrupf'
+config['statsURL'] = 'https://discord.gg/8b858RBdEy'
 
 # If config.py exists, run it to apply any overrides it wants..
 if os.path.isfile(config_path):

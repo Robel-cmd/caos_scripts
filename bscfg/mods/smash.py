@@ -226,7 +226,7 @@ class PowBox(bsBomb.Bomb):
         self.node.connectAttr('position', m, 'input2')
         self._powText = bs.newNode('text',
                                    owner=self.node,
-                                   attrs={'text': 'CAOS!',
+                                   attrs={'text': u'\u00a1CAOS!',
                                           'inWorld': True,
                                           'shadow': 1.0,
                                           'flatness': 1.0,

@@ -6,7 +6,7 @@ import bs
 #Msg List
 allow = True
 
-messageList = ['No Spam', 'No Pedir Roles', 'Torneo en mayo, infomacion en discord']
+messageList = ['si', 'no']
 #Msg Timer 
 chatMessageTime = 110 #seconds
 #Change According To U

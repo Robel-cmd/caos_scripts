@@ -40,11 +40,11 @@ gameTexts = ['Welcome To Blitz Server', 'Use "/shop commands" to see commands av
     'ticket')+' and your stats in this server', 'Use "/buy" to buy effects that you like', 'Use "/donate" to give some of your tickets to other players', 'Use "/scoretocash" to convert some of your score to '+bs.getSpecialChar('ticket')+'\nCurrent Rate: 5scores = '+bs.getSpecialChar('ticket')+'1']
 
 questionDelay = 90  # 60 #seconds
-questionsList = {u'\u00bfQui\u00e9n ser\u00e1, qui\u00e9n ser\u00e1, un hombre vestido de rojo, que viene en Navidad?': 'papa noel',
+questionsList = {u'\u00bfCuantos dias tiene un a\u00f1o bisiesto?': '366',
         u'\u00bfUna vieja con un diente que llama a toda la gente?': 'campana',
-        u'\u00bfIba una vaca de lado, luego result\u00f3 ser pescado.?': 'bacalao',
+        u'\u00bfIba una vaca de lado, luego result\u00f3 ser pescado?': 'bacalao',
         u'\u00bfTiene dientes y no come, tiene cabeza y no es una persona?': 'ajo',
-        u'\u00bfQu\u00e9 empresa suele utilizar a Pap\u00e1 Noel en su marketing?': 'Coca cola',
+        u'\u00bf videojuego  de acci\u00f3n de pepsi?': 'pepsiman',
                  'add': None,
                  'multiply': None}
 
