@@ -498,7 +498,7 @@ class Enhancement(bs.Actor):
                                 self.neroLightTimer = bs.Timer(
                                     500,
                                     bs.WeakCall(
-                                        self.neonLightSwitch,
+                                        self.footPrints,
                                         ("shine" in self.Decorations),
                                         ("extra_Highlight" in self.Decorations),
                                         ("extra_NameColor" in self.Decorations),
