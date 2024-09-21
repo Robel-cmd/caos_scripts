@@ -1,1 +1,2398 @@
-{"lc14173": 1, "Show Tutorial": false, "launchCount": 684, "lc14292": 1, "Telnet Password": "changeme", "Player Profiles": {"__account__": {"color": [0.5, 0.25, 1.0], "highlight": [0.5, 0.25, 1.0], "character": "Spaz"}}, "Achievements": {"Flawless Victory": {"Complete": false}, "Free Loader": {"Complete": true}, "Last Stand Wizard": {"Complete": false}, "The Great Wall": {"Complete": false}, "Gold Miner": {"Complete": false}, "Onslaught Training Victory": {"Complete": false}, "TNT Terror": {"Complete": false}, "Stayin' Alive": {"Complete": false}, "In Control": {"Complete": false}, "The Wall": {"Complete": false}, "Boxer": {"Complete": false}, "Rookie Onslaught Victory": {"Complete": false}, "Rookie Football Shutout": {"Complete": false}, "Uber Football Shutout": {"Complete": false}, "Uber Football Victory": {"Complete": false}, "Pro Onslaught Victory": {"Complete": false}, "Mine Games": {"Complete": false}, "Onslaught Master": {"Complete": false}, "Onslaught Wizard": {"Complete": false}, "Team Player": {"Complete": false}, "Super Punch": {"Complete": false}, "Dual Wielding": {"Complete": false}, "Pro Football Shutout": {"Complete": false}, "Got the Moves": {"Complete": false}, "Pro Football Victory": {"Complete": false}, "Sharing is Caring": {"Complete": false}, "Last Stand God": {"Complete": false}, "Runaround Wizard": {"Complete": false}, "Onslaught God": {"Complete": false}, "Pro Boxer": {"Complete": false}, "Boom Goes the Dynamite": {"Complete": false}, "Runaround Master": {"Complete": false}, "Uber Onslaught Victory": {"Complete": false}, "Uber Runaround Victory": {"Complete": false}, "Precision Bombing": {"Complete": false}, "Super Mega Punch": {"Complete": false}, "Last Stand Master": {"Complete": false}, "Pro Runaround Victory": {"Complete": false}, "Rookie Football Victory": {"Complete": false}, "Off You Go Then": {"Complete": false}, "Runaround God": {"Complete": false}}, "Telnet Port": 3478, "Default Player Profiles": {"Client Input Device #37": "__account__", "Client Input Device #18": "\"Love", "Client Input Device #19": "__account__", "Client Input Device #16": "Agente_JH", "Client Input Device #17": "@valesitaaa", "Client Input Device #14": "\u1c14\u1a5a Jenny", "Client Input Device #15": "Goku Black", "Client Input Device #12": "\"DELOP\"", "Client Input Device #13": "CHEROKA", "Client Input Device #10": "N\u0365ew\u0363t\u036b", "Client Input Device #11": "\"MENDOZA JR", "Client Input Device #4": "ALANTIC", "Client Input Device #5": "Bruss", "Client Input Device #6": "_random", "Client Input Device #7": "amogus", "Client Input Device #1": "S\u0365\u03b1h\u0363\u0f08\u036b<3", "Client Input Device #2": "_random", "Client Input Device #3": "__account__", "Client Input Device #8": "ZZZz", "Client Input Device #9": "__account__", "Client Input Device #22": "apology", "Client Input Device #21": "\"MENDOZA", "Client Input Device #20": "_random"}, "Team Tournament Playlist Selection": "__default__", "Campaigns": {}, "Signed In Last Session": false, "effectsMod": {"color": true, "tab": "info", "effect": "none", "deathEffect": "fly", "spawnEffect": "in"}, "Team Tournament Playlists": {"My Teams Playlist": [{"type": "bascenev1lib.game.football.FootballTeamGame", "settings": {"Time Limit": 0, "Epic Mode": true, "Respawn Times": 1.0, "Score to Win": 28, "map": "Football Stadium"}}, {"type": "bascenev1lib.game.chosenone.ChosenOneGame", "settings": {"map": "Bridgit", "Chosen One Gets Shield": true, "Chosen One Gets Gloves": true, "Chosen One Time": 80, "Respawn Times": 1.0, "Time Limit": 0, "Epic Mode": true}}, {"type": "bascenev1lib.game.elimination.EliminationGame", "settings": {"map": "Rampage", "Balance Total Lives": false, "Respawn Times": 1.0, "Solo Mode": true, "Time Limit": 0, "Epic Mode": true, "Lives Per Player": 4}}, {"type": "supersmash.SuperSmashElimination", "settings": {"map": "Roundabout", "Lives (0 = Unlimited)": 5, "Boxing Gloves": false, "Respawn Times": 1.0, "Time Limit": 0, "Epic Mode": true}}, {"type": "bascenev1lib.game.capturetheflag.CaptureTheFlagGame", "settings": {"map": "Courtyard", "Score to Win": 4, "Flag Idle Return Time": 30, "Flag Touch Return Time": 0, "Respawn Times": 1.0, "Time Limit": 0, "Epic Mode": true}}, {"type": "bascenev1lib.game.meteorshower.MeteorShowerGame", "settings": {"Epic Mode": true, "map": "Rampage"}}, {"type": "bascenev1lib.game.assault.AssaultGame", "settings": {"Time Limit": 0, "Epic Mode": true, "Respawn Times": 1.0, "Score to Win": 4, "map": "Roundabout"}}, {"type": "bascenev1lib.game.kingofthehill.KingOfTheHillGame", "settings": {"Time Limit": 0, "Epic Mode": true, "Hold Time": 40, "Respawn Times": 1.0, "map": "The Pad"}}, {"type": "bascenev1lib.game.elimination.EliminationGame", "settings": {"map": "Doom Shroom", "Balance Total Lives": false, "Respawn Times": 1.0, "Solo Mode": false, "Time Limit": 0, "Epic Mode": true, "Lives Per Player": 4}}, {"type": "bascenev1lib.game.deathmatch.DeathMatchGame", "settings": {"Time Limit": 0, "Epic Mode": true, "Kills to Win Per Player": 5, "Respawn Times": 1.0, "map": "Doom Shroom"}}, {"type": "bascenev1lib.game.targetpractice.TargetPracticeGame", "settings": {"Enable Impact Bombs": true, "Target Count": 4, "map": "Doom Shroom", "Enable Triple Bombs": false}}, {"type": "supersmash.SuperSmash", "settings": {"map": "Doom Shroom", "Kills to Win Per Player": 5, "Boxing Gloves": false, "Respawn Times": 1.0, "Time Limit": 0, "Epic Mode": true}}, {"type": "bascenev1lib.game.keepaway.KeepAwayGame", "settings": {"Time Limit": 0, "Epic Mode": true, "Hold Time": 30, "Respawn Times": 1.0, "map": "Zigzag"}}, {"type": "bascenev1lib.game.race.RaceGame", "settings": {"map": "Big G", "Laps": 3, "Entire Team Must Finish": false, "Epic Mode": true, "Time Limit": 0, "Mine Spawning": 4000, "Bomb Spawning": 2000}}, {"type": "bascenev1lib.game.deathmatch.DeathMatchGame", "settings": {"Time Limit": 0, "Epic Mode": true, "Kills to Win Per Player": 5, "Respawn Times": 1.0, "map": "Football Stadium"}}]}, "Lang": "English", "lc14": 1, "Team Tournament Playlist Randomize": true, "Free-for-All Playlists": {"smash": [{"type": "smash.SuperSmash", "settings": {"Time Limit": 120, "Epic Mode": true, "map": "Rampage", "Lives (0 = Unlimited)": 5}}, {"type": "smash.SuperSmash", "settings": {"Time Limit": 120, "Epic Mode": true, "map": "Football Stadium", "Lives (0 = Unlimited)": 5}}, {"type": "smash.SuperSmash", "settings": {"Time Limit": 120, "Epic Mode": true, "map": "Courtyard", "Lives (0 = Unlimited)": 5}}, {"type": "smash.SuperSmash", "settings": {"Time Limit": 120, "Epic Mode": true, "map": "The Pad", "Lives (0 = Unlimited)": 5}}, {"type": "smash.SuperSmash", "settings": {"Time Limit": 120, "Epic Mode": true, "map": "Step Right Up", "Lives (0 = Unlimited)": 5}}, {"type": "smash.SuperSmash", "settings": {"Time Limit": 120, "Epic Mode": true, "map": "Doom Shroom", "Lives (0 = Unlimited)": 5}}], "caos super smash": [{"type": "smash.SuperSmash", "settings": {"Time Limit": 120, "Epic Mode": 1, "map": "Courtyard", "Lives (0 = Unlimited)": 5}}, {"type": "smash.SuperSmash", "settings": {"Time Limit": 120, "Epic Mode": 1, "map": "Doom Shroom", "Lives (0 = Unlimited)": 5}}, {"type": "smash.SuperSmash", "settings": {"Time Limit": 120, "Epic Mode": 1, "map": "Football Stadium", "Lives (0 = Unlimited)": 5}}, {"type": "smash.SuperSmash", "settings": {"Time Limit": 120, "Epic Mode": 1, "map": "Rampage", "Lives (0 = Unlimited)": 6}}, {"type": "smash.SuperSmash", "settings": {"Time Limit": 120, "Epic Mode": 1, "map": "Step Right Up", "Lives (0 = Unlimited)": 4}}, {"type": "smash.SuperSmash", "settings": {"Time Limit": 120, "Epic Mode": true, "map": "The Pad", "Lives (0 = Unlimited)": 5}}, {"type": "smash.SuperSmash", "settings": {"Time Limit": 120, "Epic Mode": 1, "map": "Big G", "Lives (0 = Unlimited)": 5}}], "cooo LAZOEXD 2023": [{"type": "smash.SuperSmash", "settings": {"Time Limit": 120, "Epic Mode": true, "map": "Step Right Up", "Lives (0 = Unlimited)": 5}}, {"type": "smash.SuperSmash", "settings": {"Time Limit": 120, "Epic Mode": true, "map": "Tower D", "Lives (0 = Unlimited)": 5}}, {"type": "smash.SuperSmash", "settings": {"Time Limit": 120, "Epic Mode": 1, "map": "Doom Shroom", "Lives (0 = Unlimited)": 5}}, {"type": "smash.SuperSmash", "settings": {"Time Limit": 120, "Epic Mode": 1, "map": "The Pad", "Lives (0 = Unlimited)": 5}}, {"type": "smash.SuperSmash", "settings": {"Time Limit": 120, "Epic Mode": 1, "map": "Courtyard", "Lives (0 = Unlimited)": 5}}], "ffa seevee": [{"type": "bsboxing.DeathMatchGame", "settings": {"Time Limit": 120, "Epic Mode": 1, "KOs to Win Per Player": 10, "Respawn Times": 0.25, "map": "Rampage"}}, {"type": "bsDuel.DuelGame", "settings": {"map": "Bridgit", "Preserve queue through games": 0, "Respawn Powerups When Fights Finish": 0, "Allow negative score": false, "Kills to Win Per Player": 5, "Keep Powerups Alive When Fighting": 0, "Reduce score on suicide": false, "Time Limit": 120, "Epic Mode": 1, "Allow gloves and shields": false}}, {"type": "bsDuel.DuelGame", "settings": {"map": "Bridgit", "Preserve queue through games": 0, "Respawn Powerups When Fights Finish": 0, "Allow negative score": false, "Kills to Win Per Player": 5, "Keep Powerups Alive When Fighting": 0, "Reduce score on suicide": false, "Time Limit": 120, "Epic Mode": 1, "Allow gloves and shields": false}}, {"type": "bsDuel.DuelGame", "settings": {"map": "Rampage", "Preserve queue through games": 0, "Respawn Powerups When Fights Finish": 0, "Allow negative score": false, "Kills to Win Per Player": 5, "Keep Powerups Alive When Fighting": 0, "Reduce score on suicide": false, "Time Limit": 120, "Epic Mode": 1, "Allow gloves and shields": false}}, {"type": "bsDuel.DuelGame", "settings": {"map": "Courtyard", "Preserve queue through games": 0, "Respawn Powerups When Fights Finish": 0, "Allow negative score": false, "Kills to Win Per Player": 5, "Keep Powerups Alive When Fighting": 0, "Reduce score on suicide": false, "Time Limit": 120, "Epic Mode": 1, "Allow gloves and shields": false}}, {"type": "bsDuel.DuelGame", "settings": {"map": "Monkey Face", "Preserve queue through games": 0, "Respawn Powerups When Fights Finish": 0, "Allow negative score": false, "Kills to Win Per Player": 8, "Keep Powerups Alive When Fighting": 0, "Reduce score on suicide": false, "Time Limit": 120, "Epic Mode": 1, "Allow gloves and shields": false}}, {"type": "bsboxing.DeathMatchGame", "settings": {"Time Limit": 120, "Epic Mode": 1, "KOs to Win Per Player": 10, "Respawn Times": 0.25, "map": "Courtyard"}}, {"type": "bsboxing.DeathMatchGame", "settings": {"Time Limit": 120, "Epic Mode": 1, "KOs to Win Per Player": 10, "Respawn Times": 0.25, "map": "Doom Shroom"}}, {"type": "bsboxing.DeathMatchGame", "settings": {"Time Limit": 120, "Epic Mode": 1, "KOs to Win Per Player": 10, "Respawn Times": 0.25, "map": "Football Stadium"}}, {"type": "bsboxing.DeathMatchGame", "settings": {"Time Limit": 120, "Epic Mode": 1, "KOs to Win Per Player": 10, "Respawn Times": 0.25, "map": "Monkey Face"}}, {"type": "bsboxing.DeathMatchGame", "settings": {"Time Limit": 120, "Epic Mode": 1, "KOs to Win Per Player": 10, "Respawn Times": 0.25, "map": "Step Right Up"}}, {"type": "bsboxing.DeathMatchGame", "settings": {"Time Limit": 120, "Epic Mode": 1, "KOs to Win Per Player": 10, "Respawn Times": 0.25, "map": "The Pad"}}, {"type": "bsDeathMatch.DeathMatchGame", "settings": {"map": "Bridgit", "Kills to Win Per Player": 10, "Allow Negative Scores": false, "Respawn Times": 0.25, "Time Limit": 120, "Epic Mode": 1}}, {"type": "bsDeathMatch.DeathMatchGame", "settings": {"map": "Courtyard", "Kills to Win Per Player": 10, "Allow Negative Scores": false, "Respawn Times": 0.25, "Time Limit": 120, "Epic Mode": 1}}, {"type": "bsDeathMatch.DeathMatchGame", "settings": {"map": "Doom Shroom", "Kills to Win Per Player": 10, "Allow Negative Scores": false, "Respawn Times": 0.25, "Time Limit": 120, "Epic Mode": 1}}, {"type": "bsDeathMatch.DeathMatchGame", "settings": {"map": "Rampage", "Kills to Win Per Player": 10, "Allow Negative Scores": false, "Respawn Times": 0.25, "Time Limit": 120, "Epic Mode": 1}}, {"type": "bsDeathMatch.DeathMatchGame", "settings": {"map": "Football Stadium", "Kills to Win Per Player": 10, "Allow Negative Scores": false, "Respawn Times": 0.25, "Time Limit": 120, "Epic Mode": 1}}, {"type": "bsDeathMatch.DeathMatchGame", "settings": {"map": "Monkey Face", "Kills to Win Per Player": 10, "Allow Negative Scores": false, "Respawn Times": 0.25, "Time Limit": 120, "Epic Mode": 1}}, {"type": "bsDeathMatch.DeathMatchGame", "settings": {"map": "Rampage", "Kills to Win Per Player": 10, "Allow Negative Scores": false, "Respawn Times": 0.25, "Time Limit": 120, "Epic Mode": 1}}, {"type": "bsDeathMatch.DeathMatchGame", "settings": {"map": "The Pad", "Kills to Win Per Player": 10, "Allow Negative Scores": false, "Respawn Times": 0.25, "Time Limit": 120, "Epic Mode": 1}}, {"type": "bsDuel.DuelGame", "settings": {"map": "Bridgit", "Preserve queue through games": false, "Respawn Powerups When Fights Finish": false, "Allow negative score": false, "Kills to Win Per Player": 8, "Keep Powerups Alive When Fighting": false, "Reduce score on suicide": false, "Time Limit": 180, "Epic Mode": true, "Allow gloves and shields": false}}, {"type": "bsDuel.DuelGame", "settings": {"map": "Courtyard", "Preserve queue through games": false, "Respawn Powerups When Fights Finish": false, "Allow negative score": false, "Kills to Win Per Player": 8, "Keep Powerups Alive When Fighting": false, "Reduce score on suicide": false, "Time Limit": 180, "Epic Mode": true, "Allow gloves and shields": false}}, {"type": "bsDuel.DuelGame", "settings": {"map": "Rampage", "Preserve queue through games": false, "Respawn Powerups When Fights Finish": false, "Allow negative score": false, "Kills to Win Per Player": 8, "Keep Powerups Alive When Fighting": false, "Reduce score on suicide": false, "Time Limit": 180, "Epic Mode": true, "Allow gloves and shields": false}}, {"type": "bsDuel.DuelGame", "settings": {"map": "Roundabout", "Preserve queue through games": false, "Respawn Powerups When Fights Finish": false, "Allow negative score": false, "Kills to Win Per Player": 8, "Keep Powerups Alive When Fighting": false, "Reduce score on suicide": false, "Time Limit": 180, "Epic Mode": true, "Allow gloves and shields": false}}, {"type": "bsElimination.EliminationGame", "settings": {"Time Limit": 120, "Epic Mode": true, "map": "Roundabout", "Respawn Times": 0.25, "Lives Per Player": 3}}, {"type": "bsElimination.EliminationGame", "settings": {"Time Limit": 120, "Epic Mode": 1, "map": "Rampage", "Respawn Times": 0.25, "Lives Per Player": 4}}, {"type": "bsElimination.EliminationGame", "settings": {"Time Limit": 120, "Epic Mode": 1, "map": "Monkey Face", "Respawn Times": 0.25, "Lives Per Player": 3}}, {"type": "bsElimination.EliminationGame", "settings": {"Time Limit": 120, "Epic Mode": 1, "map": "Football Stadium", "Respawn Times": 0.25, "Lives Per Player": 3}}, {"type": "bsElimination.EliminationGame", "settings": {"Time Limit": 120, "Epic Mode": 1, "map": "Doom Shroom", "Respawn Times": 0.25, "Lives Per Player": 3}}, {"type": "bsElimination.EliminationGame", "settings": {"Time Limit": 120, "Epic Mode": 1, "map": "Courtyard", "Respawn Times": 0.25, "Lives Per Player": 3}}, {"type": "bsChosenOne.ChosenOneGame", "settings": {"map": "Courtyard", "Chosen One Gets Shield": false, "Chosen One Gets Gloves": true, "Chosen One Time": 20, "Respawn Times": 0.25, "Time Limit": 120, "Epic Mode": true}}, {"type": "bsChosenOne.ChosenOneGame", "settings": {"map": "Football Stadium", "Chosen One Gets Shield": false, "Chosen One Gets Gloves": true, "Chosen One Time": 20, "Respawn Times": 0.25, "Time Limit": 120, "Epic Mode": 1}}, {"type": "bsChosenOne.ChosenOneGame", "settings": {"map": "Rampage", "Chosen One Gets Shield": 0, "Chosen One Gets Gloves": true, "Chosen One Time": 20, "Respawn Times": 0.25, "Time Limit": 120, "Epic Mode": 1}}, {"type": "bsChosenOne.ChosenOneGame", "settings": {"map": "Roundabout", "Chosen One Gets Shield": 0, "Chosen One Gets Gloves": true, "Chosen One Time": 20, "Respawn Times": 0.25, "Time Limit": 120, "Epic Mode": 1}}, {"type": "bsChosenOne.ChosenOneGame", "settings": {"map": "The Pad", "Chosen One Gets Shield": false, "Chosen One Gets Gloves": true, "Chosen One Time": 20, "Respawn Times": 0.25, "Time Limit": 120, "Epic Mode": 1}}, {"type": "bsChosenOne.ChosenOneGame", "settings": {"map": "Doom Shroom", "Chosen One Gets Shield": false, "Chosen One Gets Gloves": true, "Chosen One Time": 20, "Respawn Times": 0.25, "Time Limit": 120, "Epic Mode": 1}}, {"type": "bsChosenOne.ChosenOneGame", "settings": {"map": "Football Stadium", "Chosen One Gets Shield": false, "Chosen One Gets Gloves": true, "Chosen One Time": 20, "Respawn Times": 0.25, "Time Limit": 120, "Epic Mode": 1}}, {"type": "bsChosenOne.ChosenOneGame", "settings": {"map": "Monkey Face", "Chosen One Gets Shield": 0, "Chosen One Gets Gloves": true, "Chosen One Time": 20, "Respawn Times": 0.25, "Time Limit": 120, "Epic Mode": 1}}, {"type": "bsElimination.EliminationGame", "settings": {"Time Limit": 120, "Epic Mode": true, "map": "The Pad", "Respawn Times": 0.25, "Lives Per Player": 3}}, {"type": "bsElimination.EliminationGame", "settings": {"Time Limit": 120, "Epic Mode": 1, "map": "Step Right Up", "Respawn Times": 0.25, "Lives Per Player": 3}}], "caosfaaa list": [{"type": "smash.SuperSmash", "settings": {"Time Limit": 120, "Epic Mode": true, "map": "Courtyard", "Lives (0 = Unlimited)": 5}}, {"type": "smash.SuperSmash", "settings": {"Time Limit": 120, "Epic Mode": 1, "map": "Tower D", "Lives (0 = Unlimited)": 4}}, {"type": "smash.SuperSmash", "settings": {"Time Limit": 120, "Epic Mode": 1, "map": "Lake Frigid", "Lives (0 = Unlimited)": 3}}, {"type": "smash.SuperSmash", "settings": {"Time Limit": 120, "Epic Mode": true, "map": "Doom Shroom", "Lives (0 = Unlimited)": 5}}, {"type": "smash.SuperSmash", "settings": {"Time Limit": 120, "Epic Mode": true, "map": "Football Stadium", "Lives (0 = Unlimited)": 5}}, {"type": "smash.SuperSmash", "settings": {"Time Limit": 120, "Epic Mode": true, "map": "Step Right Up", "Lives (0 = Unlimited)": 5}}, {"type": "smash.SuperSmash", "settings": {"Time Limit": 120, "Epic Mode": true, "map": "The Pad", "Lives (0 = Unlimited)": 5}}, {"type": "smash.SuperSmash", "settings": {"Time Limit": 120, "Epic Mode": 1, "map": "Rampage", "Lives (0 = Unlimited)": 7}}], "Servers": [{"type": "smash.SuperSmash", "settings": {"Time Limit": 120, "Epic Mode": 1, "map": "Tower D", "Lives (0 = Unlimited)": 5}}, {"type": "smash.SuperSmash", "settings": {"Time Limit": 120, "Epic Mode": 1, "map": "Courtyard", "Lives (0 = Unlimited)": 5}}, {"type": "smash.SuperSmash", "settings": {"Time Limit": 120, "Epic Mode": 1, "map": "Rampage", "Lives (0 = Unlimited)": 7}}, {"type": "smash.SuperSmash", "settings": {"Time Limit": 120, "Epic Mode": 1, "map": "Step Right Up", "Lives (0 = Unlimited)": 5}}, {"type": "smash.SuperSmash", "settings": {"Time Limit": 120, "Epic Mode": 1, "map": "Football Stadium", "Lives (0 = Unlimited)": 5}}, {"type": "smash.SuperSmash", "settings": {"Time Limit": 120, "Epic Mode": 1, "map": "Doom Shroom", "Lives (0 = Unlimited)": 5}}, {"type": "smash.SuperSmash", "settings": {"Time Limit": 120, "Epic Mode": 1, "map": "The Pad", "Lives (0 = Unlimited)": 5}}], "torneo": [{"type": "smash.SuperSmash", "settings": {"Time Limit": 0, "Epic Mode": 1, "map": "The Pad", "Lives (0 = Unlimited)": 3}}], "Mijs": [{"type": "smash.SuperSmash", "settings": {"Time Limit": 120, "Epic Mode": true, "map": "Courtyard", "Lives (0 = Unlimited)": 5}}, {"type": "smash.SuperSmash", "settings": {"Time Limit": 120, "Epic Mode": 1, "map": "Tower D", "Lives (0 = Unlimited)": 4}}, {"type": "smash.SuperSmash", "settings": {"Time Limit": 120, "Epic Mode": true, "map": "Doom Shroom", "Lives (0 = Unlimited)": 5}}, {"type": "smash.SuperSmash", "settings": {"Time Limit": 120, "Epic Mode": true, "map": "Football Stadium", "Lives (0 = Unlimited)": 5}}, {"type": "smash.SuperSmash", "settings": {"Time Limit": 120, "Epic Mode": true, "map": "Step Right Up", "Lives (0 = Unlimited)": 5}}, {"type": "smash.SuperSmash", "settings": {"Time Limit": 120, "Epic Mode": true, "map": "The Pad", "Lives (0 = Unlimited)": 5}}, {"type": "smash.SuperSmash", "settings": {"Time Limit": 120, "Epic Mode": 1, "map": "Rampage", "Lives (0 = Unlimited)": 7}}], "ffa": [{"type": "smash.SuperSmash", "settings": {"Time Limit": 120, "Epic Mode": 1, "map": "Doom Shroom", "Lives (0 = Unlimited)": 4}}, {"type": "smash.SuperSmash", "settings": {"Time Limit": 120, "Epic Mode": true, "map": "Tower D", "Lives (0 = Unlimited)": 4}}, {"type": "smash.SuperSmash", "settings": {"Time Limit": 120, "Epic Mode": 1, "map": "Tower D", "Lives (0 = Unlimited)": 4}}, {"type": "smash.SuperSmash", "settings": {"Time Limit": 60, "Epic Mode": true, "map": "Football Stadium", "Lives (0 = Unlimited)": 3}}, {"type": "smash.SuperSmash", "settings": {"Time Limit": 120, "Epic Mode": true, "map": "Doom Shroom", "Lives (0 = Unlimited)": 3}}, {"type": "smash.SuperSmash", "settings": {"Time Limit": 60, "Epic Mode": true, "map": "Football Stadium", "Lives (0 = Unlimited)": 4}}, {"type": "smash.SuperSmash", "settings": {"Time Limit": 120, "Epic Mode": true, "map": "Rampage", "Lives (0 = Unlimited)": 3}}, {"type": "smash.SuperSmash", "settings": {"Time Limit": 120, "Epic Mode": true, "map": "Step Right Up", "Lives (0 = Unlimited)": 3}}, {"type": "smash.SuperSmash", "settings": {"Time Limit": 120, "Epic Mode": true, "map": "Courtyard", "Lives (0 = Unlimited)": 3}}, {"type": "smash.SuperSmash", "settings": {"Time Limit": 120, "Epic Mode": true, "map": "The Pad", "Lives (0 = Unlimited)": 4}}, {"type": "smash.SuperSmash", "settings": {"Time Limit": 120, "Epic Mode": true, "map": "The Pad", "Lives (0 = Unlimited)": 3}}, {"type": "smash.SuperSmash", "settings": {"Time Limit": 120, "Epic Mode": 1, "map": "Courtyard", "Lives (0 = Unlimited)": 4}}]}, "Enable Telnet": true, "lc14146": 1, "lc14c": 1, "Auto Balance Teams": true, "Local Account Name": "Server10767777", "PSTR": 0, "Free-for-All Playlist Randomize": true, "Auto Account State": "Server", "Free-for-All Playlist Selection": "Mijs", "Port": 43210}
+{
+ "Achievements": {
+  "Boom Goes the Dynamite": {
+   "Complete": false
+  }, 
+  "Boxer": {
+   "Complete": false
+  }, 
+  "Dual Wielding": {
+   "Complete": false
+  }, 
+  "Flawless Victory": {
+   "Complete": false
+  }, 
+  "Free Loader": {
+   "Complete": true
+  }, 
+  "Gold Miner": {
+   "Complete": false
+  }, 
+  "Got the Moves": {
+   "Complete": false
+  }, 
+  "In Control": {
+   "Complete": false
+  }, 
+  "Last Stand God": {
+   "Complete": false
+  }, 
+  "Last Stand Master": {
+   "Complete": false
+  }, 
+  "Last Stand Wizard": {
+   "Complete": false
+  }, 
+  "Mine Games": {
+   "Complete": false
+  }, 
+  "Off You Go Then": {
+   "Complete": false
+  }, 
+  "Onslaught God": {
+   "Complete": false
+  }, 
+  "Onslaught Master": {
+   "Complete": false
+  }, 
+  "Onslaught Training Victory": {
+   "Complete": false
+  }, 
+  "Onslaught Wizard": {
+   "Complete": false
+  }, 
+  "Precision Bombing": {
+   "Complete": false
+  }, 
+  "Pro Boxer": {
+   "Complete": false
+  }, 
+  "Pro Football Shutout": {
+   "Complete": false
+  }, 
+  "Pro Football Victory": {
+   "Complete": false
+  }, 
+  "Pro Onslaught Victory": {
+   "Complete": false
+  }, 
+  "Pro Runaround Victory": {
+   "Complete": false
+  }, 
+  "Rookie Football Shutout": {
+   "Complete": false
+  }, 
+  "Rookie Football Victory": {
+   "Complete": false
+  }, 
+  "Rookie Onslaught Victory": {
+   "Complete": false
+  }, 
+  "Runaround God": {
+   "Complete": false
+  }, 
+  "Runaround Master": {
+   "Complete": false
+  }, 
+  "Runaround Wizard": {
+   "Complete": false
+  }, 
+  "Sharing is Caring": {
+   "Complete": false
+  }, 
+  "Stayin' Alive": {
+   "Complete": false
+  }, 
+  "Super Mega Punch": {
+   "Complete": false
+  }, 
+  "Super Punch": {
+   "Complete": false
+  }, 
+  "TNT Terror": {
+   "Complete": false
+  }, 
+  "Team Player": {
+   "Complete": true
+  }, 
+  "The Great Wall": {
+   "Complete": false
+  }, 
+  "The Wall": {
+   "Complete": false
+  }, 
+  "Uber Football Shutout": {
+   "Complete": false
+  }, 
+  "Uber Football Victory": {
+   "Complete": false
+  }, 
+  "Uber Onslaught Victory": {
+   "Complete": false
+  }, 
+  "Uber Runaround Victory": {
+   "Complete": false
+  }
+ }, 
+ "Auto Account State": "Server", 
+ "Auto Balance Teams": true, 
+ "Campaigns": {}, 
+ "Default Player Profiles": {
+  "Client Input Device #1": "__account__", 
+  "Client Input Device #10": "N\u0365ew\u0363t\u036b", 
+  "Client Input Device #11": "\"MENDOZA JR", 
+  "Client Input Device #12": "\"DELOP\"", 
+  "Client Input Device #13": "CHEROKA", 
+  "Client Input Device #14": "\u1c14\u1a5a Jenny", 
+  "Client Input Device #15": "Goku Black", 
+  "Client Input Device #16": "Agente_JH", 
+  "Client Input Device #17": "@valesitaaa", 
+  "Client Input Device #18": "\"Love", 
+  "Client Input Device #19": "__account__", 
+  "Client Input Device #2": "_random", 
+  "Client Input Device #20": "_random", 
+  "Client Input Device #21": "\"MENDOZA", 
+  "Client Input Device #22": "apology", 
+  "Client Input Device #3": "__account__", 
+  "Client Input Device #37": "__account__", 
+  "Client Input Device #4": "ALANTIC", 
+  "Client Input Device #5": "Bruss", 
+  "Client Input Device #6": "_random", 
+  "Client Input Device #7": "amogus", 
+  "Client Input Device #8": "ZZZz", 
+  "Client Input Device #9": "__account__"
+ }, 
+ "Enable Telnet": true, 
+ "Free-for-All Playlist Randomize": true, 
+ "Free-for-All Playlist Selection": "Mijs", 
+ "Free-for-All Playlists": {
+  "LaZoeXD \u00a92024-2021": [
+   {
+    "settings": {
+     "Epic Mode": true, 
+     "Lives (0 = Unlimited)": 5, 
+     "Time Limit": 120, 
+     "map": "Step Right Up"
+    }, 
+    "type": "smash.SuperSmash"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": true, 
+     "Lives (0 = Unlimited)": 5, 
+     "Time Limit": 120, 
+     "map": "Tower D"
+    }, 
+    "type": "smash.SuperSmash"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": true, 
+     "Lives (0 = Unlimited)": 5, 
+     "Time Limit": 120, 
+     "map": "Doom Shroom"
+    }, 
+    "type": "smash.SuperSmash"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": true, 
+     "Lives (0 = Unlimited)": 5, 
+     "Time Limit": 120, 
+     "map": "The Pad"
+    }, 
+    "type": "smash.SuperSmash"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": true, 
+     "Lives (0 = Unlimited)": 5, 
+     "Time Limit": 120, 
+     "map": "Courtyard"
+    }, 
+    "type": "smash.SuperSmash"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": true, 
+     "Lives (0 = Unlimited)": 7, 
+     "Time Limit": 120, 
+     "map": "Rampage"
+    }, 
+    "type": "smash.SuperSmash"
+   }
+  ], 
+  "Mi lista Todos contra Todos": [
+   {
+    "settings": {
+     "Epic Mode": true, 
+     "Lives Per Player": 6, 
+     "Respawn Times": 0.25, 
+     "Time Limit": 0, 
+     "map": "ZizagMap Test"
+    }, 
+    "type": "bsElimination.EliminationGame"
+   }
+  ], 
+  "Mijs": [
+   {
+    "settings": {
+     "Epic Mode": true, 
+     "Lives (0 = Unlimited)": 5, 
+     "Time Limit": 120, 
+     "map": "Courtyard"
+    }, 
+    "type": "smash.SuperSmash"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": 1, 
+     "Lives (0 = Unlimited)": 4, 
+     "Time Limit": 120, 
+     "map": "Tower D"
+    }, 
+    "type": "smash.SuperSmash"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": true, 
+     "Lives (0 = Unlimited)": 5, 
+     "Time Limit": 120, 
+     "map": "Doom Shroom"
+    }, 
+    "type": "smash.SuperSmash"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": true, 
+     "Lives (0 = Unlimited)": 5, 
+     "Time Limit": 120, 
+     "map": "Football Stadium"
+    }, 
+    "type": "smash.SuperSmash"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": true, 
+     "Lives (0 = Unlimited)": 5, 
+     "Time Limit": 120, 
+     "map": "Step Right Up"
+    }, 
+    "type": "smash.SuperSmash"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": true, 
+     "Lives (0 = Unlimited)": 5, 
+     "Time Limit": 120, 
+     "map": "The Pad"
+    }, 
+    "type": "smash.SuperSmash"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": 1, 
+     "Lives (0 = Unlimited)": 7, 
+     "Time Limit": 120, 
+     "map": "Rampage"
+    }, 
+    "type": "smash.SuperSmash"
+   }
+  ], 
+  "SMASH": [
+   {
+    "settings": {
+     "Epic Mode": 1, 
+     "Lives (0 = Unlimited)": 3, 
+     "Time Limit": 120, 
+     "map": "The Pad"
+    }, 
+    "type": "smash.SuperSmash"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": 1, 
+     "Lives (0 = Unlimited)": 3, 
+     "Time Limit": 120, 
+     "map": "Doom Shroom"
+    }, 
+    "type": "smash.SuperSmash"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": 1, 
+     "Lives (0 = Unlimited)": 3, 
+     "Time Limit": 120, 
+     "map": "Bridgit"
+    }, 
+    "type": "smash.SuperSmash"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": 1, 
+     "Lives (0 = Unlimited)": 2, 
+     "Time Limit": 120, 
+     "map": "Lago Frigido!!"
+    }, 
+    "type": "smash.SuperSmash"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": 1, 
+     "Lives (0 = Unlimited)": 2, 
+     "Time Limit": 120, 
+     "map": "Negro Y Blanco"
+    }, 
+    "type": "smash.SuperSmash"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": 1, 
+     "Lives (0 = Unlimited)": 2, 
+     "Time Limit": 120, 
+     "map": "Crag Castle"
+    }, 
+    "type": "smash.SuperSmash"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": 1, 
+     "Lives (0 = Unlimited)": 2, 
+     "Time Limit": 120, 
+     "map": "Monkey Face"
+    }, 
+    "type": "smash.SuperSmash"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": 1, 
+     "Lives (0 = Unlimited)": 2, 
+     "Time Limit": 120, 
+     "map": "Roundabout"
+    }, 
+    "type": "smash.SuperSmash"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": 1, 
+     "Lives (0 = Unlimited)": 3, 
+     "Time Limit": 120, 
+     "map": "Mapa1"
+    }, 
+    "type": "smash.SuperSmash"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": 1, 
+     "Lives (0 = Unlimited)": 3, 
+     "Time Limit": 120, 
+     "map": "Zigzag"
+    }, 
+    "type": "smash.SuperSmash"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": 1, 
+     "Lives (0 = Unlimited)": 3, 
+     "Time Limit": 120, 
+     "map": "Rampage"
+    }, 
+    "type": "smash.SuperSmash"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": 1, 
+     "Lives (0 = Unlimited)": 3, 
+     "Time Limit": 120, 
+     "map": "Map2"
+    }, 
+    "type": "smash.SuperSmash"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": true, 
+     "Lives (0 = Unlimited)": 3, 
+     "Time Limit": 120, 
+     "map": "Big G"
+    }, 
+    "type": "smash.SuperSmash"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": 1, 
+     "Lives (0 = Unlimited)": 3, 
+     "Time Limit": 120, 
+     "map": "Courtyard"
+    }, 
+    "type": "smash.SuperSmash"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": 1, 
+     "Lives (0 = Unlimited)": 3, 
+     "Time Limit": 120, 
+     "map": "Football Stadium"
+    }, 
+    "type": "smash.SuperSmash"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": 1, 
+     "Lives (0 = Unlimited)": 3, 
+     "Time Limit": 120, 
+     "map": "Hockey Stadium"
+    }, 
+    "type": "smash.SuperSmash"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": 1, 
+     "Lives (0 = Unlimited)": 3, 
+     "Time Limit": 120, 
+     "map": "Step Right Up"
+    }, 
+    "type": "smash.SuperSmash"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": 1, 
+     "Lives (0 = Unlimited)": 3, 
+     "Time Limit": 120, 
+     "map": "Paradisee"
+    }, 
+    "type": "smash.SuperSmash"
+   }
+  ], 
+  "Server": [
+   {
+    "settings": {
+     "Epic Mode": true, 
+     "Lives (0 = Unlimited)": 5, 
+     "Time Limit": 120, 
+     "map": "Step Right Up"
+    }, 
+    "type": "smash.SuperSmash"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": true, 
+     "Lives (0 = Unlimited)": 5, 
+     "Time Limit": 120, 
+     "map": "Tower D"
+    }, 
+    "type": "smash.SuperSmash"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": 1, 
+     "Lives (0 = Unlimited)": 5, 
+     "Time Limit": 120, 
+     "map": "Doom Shroom"
+    }, 
+    "type": "smash.SuperSmash"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": 1, 
+     "Lives (0 = Unlimited)": 5, 
+     "Time Limit": 120, 
+     "map": "The Pad"
+    }, 
+    "type": "smash.SuperSmash"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": 1, 
+     "Lives (0 = Unlimited)": 5, 
+     "Time Limit": 120, 
+     "map": "Courtyard"
+    }, 
+    "type": "smash.SuperSmash"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": 1, 
+     "Lives (0 = Unlimited)": 5, 
+     "Time Limit": 60, 
+     "map": "Football Stadium"
+    }, 
+    "type": "smash.SuperSmash"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": 1, 
+     "Lives (0 = Unlimited)": 7, 
+     "Time Limit": 120, 
+     "map": "Rampage"
+    }, 
+    "type": "smash.SuperSmash"
+   }
+  ], 
+  "Servers": [
+   {
+    "settings": {
+     "Epic Mode": 1, 
+     "Lives (0 = Unlimited)": 5, 
+     "Time Limit": 120, 
+     "map": "Tower D"
+    }, 
+    "type": "smash.SuperSmash"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": 1, 
+     "Lives (0 = Unlimited)": 5, 
+     "Time Limit": 120, 
+     "map": "Courtyard"
+    }, 
+    "type": "smash.SuperSmash"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": 1, 
+     "Lives (0 = Unlimited)": 7, 
+     "Time Limit": 120, 
+     "map": "Rampage"
+    }, 
+    "type": "smash.SuperSmash"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": 1, 
+     "Lives (0 = Unlimited)": 5, 
+     "Time Limit": 120, 
+     "map": "Step Right Up"
+    }, 
+    "type": "smash.SuperSmash"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": 1, 
+     "Lives (0 = Unlimited)": 5, 
+     "Time Limit": 120, 
+     "map": "Football Stadium"
+    }, 
+    "type": "smash.SuperSmash"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": 1, 
+     "Lives (0 = Unlimited)": 5, 
+     "Time Limit": 120, 
+     "map": "Doom Shroom"
+    }, 
+    "type": "smash.SuperSmash"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": 1, 
+     "Lives (0 = Unlimited)": 5, 
+     "Time Limit": 120, 
+     "map": "The Pad"
+    }, 
+    "type": "smash.SuperSmash"
+   }
+  ], 
+  "TOURNEY LAZOEXD SEASON III": [
+   {
+    "settings": {
+     "Epic Mode": 1, 
+     "Lives (0 = Unlimited)": 4, 
+     "Time Limit": 0, 
+     "map": "ZizagMap Test"
+    }, 
+    "type": "smash.SuperSmash"
+   }
+  ], 
+  "caos super smash": [
+   {
+    "settings": {
+     "Epic Mode": 1, 
+     "Lives (0 = Unlimited)": 5, 
+     "Time Limit": 120, 
+     "map": "Courtyard"
+    }, 
+    "type": "smash.SuperSmash"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": 1, 
+     "Lives (0 = Unlimited)": 5, 
+     "Time Limit": 120, 
+     "map": "Doom Shroom"
+    }, 
+    "type": "smash.SuperSmash"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": 1, 
+     "Lives (0 = Unlimited)": 5, 
+     "Time Limit": 120, 
+     "map": "Football Stadium"
+    }, 
+    "type": "smash.SuperSmash"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": 1, 
+     "Lives (0 = Unlimited)": 6, 
+     "Time Limit": 120, 
+     "map": "Rampage"
+    }, 
+    "type": "smash.SuperSmash"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": 1, 
+     "Lives (0 = Unlimited)": 4, 
+     "Time Limit": 120, 
+     "map": "Step Right Up"
+    }, 
+    "type": "smash.SuperSmash"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": true, 
+     "Lives (0 = Unlimited)": 5, 
+     "Time Limit": 120, 
+     "map": "The Pad"
+    }, 
+    "type": "smash.SuperSmash"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": 1, 
+     "Lives (0 = Unlimited)": 5, 
+     "Time Limit": 120, 
+     "map": "Big G"
+    }, 
+    "type": "smash.SuperSmash"
+   }
+  ], 
+  "caosfaaa list": [
+   {
+    "settings": {
+     "Epic Mode": true, 
+     "Lives (0 = Unlimited)": 5, 
+     "Time Limit": 120, 
+     "map": "Courtyard"
+    }, 
+    "type": "smash.SuperSmash"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": 1, 
+     "Lives (0 = Unlimited)": 4, 
+     "Time Limit": 120, 
+     "map": "Tower D"
+    }, 
+    "type": "smash.SuperSmash"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": 1, 
+     "Lives (0 = Unlimited)": 3, 
+     "Time Limit": 120, 
+     "map": "Lake Frigid"
+    }, 
+    "type": "smash.SuperSmash"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": true, 
+     "Lives (0 = Unlimited)": 5, 
+     "Time Limit": 120, 
+     "map": "Doom Shroom"
+    }, 
+    "type": "smash.SuperSmash"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": true, 
+     "Lives (0 = Unlimited)": 5, 
+     "Time Limit": 120, 
+     "map": "Football Stadium"
+    }, 
+    "type": "smash.SuperSmash"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": true, 
+     "Lives (0 = Unlimited)": 5, 
+     "Time Limit": 120, 
+     "map": "Step Right Up"
+    }, 
+    "type": "smash.SuperSmash"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": true, 
+     "Lives (0 = Unlimited)": 5, 
+     "Time Limit": 120, 
+     "map": "The Pad"
+    }, 
+    "type": "smash.SuperSmash"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": 1, 
+     "Lives (0 = Unlimited)": 7, 
+     "Time Limit": 120, 
+     "map": "Rampage"
+    }, 
+    "type": "smash.SuperSmash"
+   }
+  ], 
+  "cooo LAZOEXD 2023": [
+   {
+    "settings": {
+     "Epic Mode": true, 
+     "Lives (0 = Unlimited)": 5, 
+     "Time Limit": 120, 
+     "map": "Step Right Up"
+    }, 
+    "type": "smash.SuperSmash"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": true, 
+     "Lives (0 = Unlimited)": 5, 
+     "Time Limit": 120, 
+     "map": "Tower D"
+    }, 
+    "type": "smash.SuperSmash"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": 1, 
+     "Lives (0 = Unlimited)": 5, 
+     "Time Limit": 120, 
+     "map": "Doom Shroom"
+    }, 
+    "type": "smash.SuperSmash"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": 1, 
+     "Lives (0 = Unlimited)": 5, 
+     "Time Limit": 120, 
+     "map": "The Pad"
+    }, 
+    "type": "smash.SuperSmash"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": 1, 
+     "Lives (0 = Unlimited)": 5, 
+     "Time Limit": 120, 
+     "map": "Courtyard"
+    }, 
+    "type": "smash.SuperSmash"
+   }
+  ], 
+  "ffa": [
+   {
+    "settings": {
+     "Epic Mode": 1, 
+     "Lives (0 = Unlimited)": 4, 
+     "Time Limit": 120, 
+     "map": "Doom Shroom"
+    }, 
+    "type": "smash.SuperSmash"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": true, 
+     "Lives (0 = Unlimited)": 4, 
+     "Time Limit": 120, 
+     "map": "Tower D"
+    }, 
+    "type": "smash.SuperSmash"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": 1, 
+     "Lives (0 = Unlimited)": 4, 
+     "Time Limit": 120, 
+     "map": "Tower D"
+    }, 
+    "type": "smash.SuperSmash"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": true, 
+     "Lives (0 = Unlimited)": 3, 
+     "Time Limit": 60, 
+     "map": "Football Stadium"
+    }, 
+    "type": "smash.SuperSmash"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": true, 
+     "Lives (0 = Unlimited)": 3, 
+     "Time Limit": 120, 
+     "map": "Doom Shroom"
+    }, 
+    "type": "smash.SuperSmash"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": true, 
+     "Lives (0 = Unlimited)": 4, 
+     "Time Limit": 60, 
+     "map": "Football Stadium"
+    }, 
+    "type": "smash.SuperSmash"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": true, 
+     "Lives (0 = Unlimited)": 3, 
+     "Time Limit": 120, 
+     "map": "Rampage"
+    }, 
+    "type": "smash.SuperSmash"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": true, 
+     "Lives (0 = Unlimited)": 3, 
+     "Time Limit": 120, 
+     "map": "Step Right Up"
+    }, 
+    "type": "smash.SuperSmash"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": true, 
+     "Lives (0 = Unlimited)": 3, 
+     "Time Limit": 120, 
+     "map": "Courtyard"
+    }, 
+    "type": "smash.SuperSmash"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": true, 
+     "Lives (0 = Unlimited)": 4, 
+     "Time Limit": 120, 
+     "map": "The Pad"
+    }, 
+    "type": "smash.SuperSmash"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": true, 
+     "Lives (0 = Unlimited)": 3, 
+     "Time Limit": 120, 
+     "map": "The Pad"
+    }, 
+    "type": "smash.SuperSmash"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": 1, 
+     "Lives (0 = Unlimited)": 4, 
+     "Time Limit": 120, 
+     "map": "Courtyard"
+    }, 
+    "type": "smash.SuperSmash"
+   }
+  ], 
+  "ffa seevee": [
+   {
+    "settings": {
+     "Epic Mode": 1, 
+     "KOs to Win Per Player": 10, 
+     "Respawn Times": 0.25, 
+     "Time Limit": 120, 
+     "map": "Rampage"
+    }, 
+    "type": "bsboxing.DeathMatchGame"
+   }, 
+   {
+    "settings": {
+     "Allow gloves and shields": false, 
+     "Allow negative score": false, 
+     "Epic Mode": 1, 
+     "Keep Powerups Alive When Fighting": 0, 
+     "Kills to Win Per Player": 5, 
+     "Preserve queue through games": 0, 
+     "Reduce score on suicide": false, 
+     "Respawn Powerups When Fights Finish": 0, 
+     "Time Limit": 120, 
+     "map": "Bridgit"
+    }, 
+    "type": "bsDuel.DuelGame"
+   }, 
+   {
+    "settings": {
+     "Allow gloves and shields": false, 
+     "Allow negative score": false, 
+     "Epic Mode": 1, 
+     "Keep Powerups Alive When Fighting": 0, 
+     "Kills to Win Per Player": 5, 
+     "Preserve queue through games": 0, 
+     "Reduce score on suicide": false, 
+     "Respawn Powerups When Fights Finish": 0, 
+     "Time Limit": 120, 
+     "map": "Bridgit"
+    }, 
+    "type": "bsDuel.DuelGame"
+   }, 
+   {
+    "settings": {
+     "Allow gloves and shields": false, 
+     "Allow negative score": false, 
+     "Epic Mode": 1, 
+     "Keep Powerups Alive When Fighting": 0, 
+     "Kills to Win Per Player": 5, 
+     "Preserve queue through games": 0, 
+     "Reduce score on suicide": false, 
+     "Respawn Powerups When Fights Finish": 0, 
+     "Time Limit": 120, 
+     "map": "Rampage"
+    }, 
+    "type": "bsDuel.DuelGame"
+   }, 
+   {
+    "settings": {
+     "Allow gloves and shields": false, 
+     "Allow negative score": false, 
+     "Epic Mode": 1, 
+     "Keep Powerups Alive When Fighting": 0, 
+     "Kills to Win Per Player": 5, 
+     "Preserve queue through games": 0, 
+     "Reduce score on suicide": false, 
+     "Respawn Powerups When Fights Finish": 0, 
+     "Time Limit": 120, 
+     "map": "Courtyard"
+    }, 
+    "type": "bsDuel.DuelGame"
+   }, 
+   {
+    "settings": {
+     "Allow gloves and shields": false, 
+     "Allow negative score": false, 
+     "Epic Mode": 1, 
+     "Keep Powerups Alive When Fighting": 0, 
+     "Kills to Win Per Player": 8, 
+     "Preserve queue through games": 0, 
+     "Reduce score on suicide": false, 
+     "Respawn Powerups When Fights Finish": 0, 
+     "Time Limit": 120, 
+     "map": "Monkey Face"
+    }, 
+    "type": "bsDuel.DuelGame"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": 1, 
+     "KOs to Win Per Player": 10, 
+     "Respawn Times": 0.25, 
+     "Time Limit": 120, 
+     "map": "Courtyard"
+    }, 
+    "type": "bsboxing.DeathMatchGame"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": 1, 
+     "KOs to Win Per Player": 10, 
+     "Respawn Times": 0.25, 
+     "Time Limit": 120, 
+     "map": "Doom Shroom"
+    }, 
+    "type": "bsboxing.DeathMatchGame"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": 1, 
+     "KOs to Win Per Player": 10, 
+     "Respawn Times": 0.25, 
+     "Time Limit": 120, 
+     "map": "Football Stadium"
+    }, 
+    "type": "bsboxing.DeathMatchGame"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": 1, 
+     "KOs to Win Per Player": 10, 
+     "Respawn Times": 0.25, 
+     "Time Limit": 120, 
+     "map": "Monkey Face"
+    }, 
+    "type": "bsboxing.DeathMatchGame"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": 1, 
+     "KOs to Win Per Player": 10, 
+     "Respawn Times": 0.25, 
+     "Time Limit": 120, 
+     "map": "Step Right Up"
+    }, 
+    "type": "bsboxing.DeathMatchGame"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": 1, 
+     "KOs to Win Per Player": 10, 
+     "Respawn Times": 0.25, 
+     "Time Limit": 120, 
+     "map": "The Pad"
+    }, 
+    "type": "bsboxing.DeathMatchGame"
+   }, 
+   {
+    "settings": {
+     "Allow Negative Scores": false, 
+     "Epic Mode": 1, 
+     "Kills to Win Per Player": 10, 
+     "Respawn Times": 0.25, 
+     "Time Limit": 120, 
+     "map": "Bridgit"
+    }, 
+    "type": "bsDeathMatch.DeathMatchGame"
+   }, 
+   {
+    "settings": {
+     "Allow Negative Scores": false, 
+     "Epic Mode": 1, 
+     "Kills to Win Per Player": 10, 
+     "Respawn Times": 0.25, 
+     "Time Limit": 120, 
+     "map": "Courtyard"
+    }, 
+    "type": "bsDeathMatch.DeathMatchGame"
+   }, 
+   {
+    "settings": {
+     "Allow Negative Scores": false, 
+     "Epic Mode": 1, 
+     "Kills to Win Per Player": 10, 
+     "Respawn Times": 0.25, 
+     "Time Limit": 120, 
+     "map": "Doom Shroom"
+    }, 
+    "type": "bsDeathMatch.DeathMatchGame"
+   }, 
+   {
+    "settings": {
+     "Allow Negative Scores": false, 
+     "Epic Mode": 1, 
+     "Kills to Win Per Player": 10, 
+     "Respawn Times": 0.25, 
+     "Time Limit": 120, 
+     "map": "Rampage"
+    }, 
+    "type": "bsDeathMatch.DeathMatchGame"
+   }, 
+   {
+    "settings": {
+     "Allow Negative Scores": false, 
+     "Epic Mode": 1, 
+     "Kills to Win Per Player": 10, 
+     "Respawn Times": 0.25, 
+     "Time Limit": 120, 
+     "map": "Football Stadium"
+    }, 
+    "type": "bsDeathMatch.DeathMatchGame"
+   }, 
+   {
+    "settings": {
+     "Allow Negative Scores": false, 
+     "Epic Mode": 1, 
+     "Kills to Win Per Player": 10, 
+     "Respawn Times": 0.25, 
+     "Time Limit": 120, 
+     "map": "Monkey Face"
+    }, 
+    "type": "bsDeathMatch.DeathMatchGame"
+   }, 
+   {
+    "settings": {
+     "Allow Negative Scores": false, 
+     "Epic Mode": 1, 
+     "Kills to Win Per Player": 10, 
+     "Respawn Times": 0.25, 
+     "Time Limit": 120, 
+     "map": "Rampage"
+    }, 
+    "type": "bsDeathMatch.DeathMatchGame"
+   }, 
+   {
+    "settings": {
+     "Allow Negative Scores": false, 
+     "Epic Mode": 1, 
+     "Kills to Win Per Player": 10, 
+     "Respawn Times": 0.25, 
+     "Time Limit": 120, 
+     "map": "The Pad"
+    }, 
+    "type": "bsDeathMatch.DeathMatchGame"
+   }, 
+   {
+    "settings": {
+     "Allow gloves and shields": false, 
+     "Allow negative score": false, 
+     "Epic Mode": true, 
+     "Keep Powerups Alive When Fighting": false, 
+     "Kills to Win Per Player": 8, 
+     "Preserve queue through games": false, 
+     "Reduce score on suicide": false, 
+     "Respawn Powerups When Fights Finish": false, 
+     "Time Limit": 180, 
+     "map": "Bridgit"
+    }, 
+    "type": "bsDuel.DuelGame"
+   }, 
+   {
+    "settings": {
+     "Allow gloves and shields": false, 
+     "Allow negative score": false, 
+     "Epic Mode": true, 
+     "Keep Powerups Alive When Fighting": false, 
+     "Kills to Win Per Player": 8, 
+     "Preserve queue through games": false, 
+     "Reduce score on suicide": false, 
+     "Respawn Powerups When Fights Finish": false, 
+     "Time Limit": 180, 
+     "map": "Courtyard"
+    }, 
+    "type": "bsDuel.DuelGame"
+   }, 
+   {
+    "settings": {
+     "Allow gloves and shields": false, 
+     "Allow negative score": false, 
+     "Epic Mode": true, 
+     "Keep Powerups Alive When Fighting": false, 
+     "Kills to Win Per Player": 8, 
+     "Preserve queue through games": false, 
+     "Reduce score on suicide": false, 
+     "Respawn Powerups When Fights Finish": false, 
+     "Time Limit": 180, 
+     "map": "Rampage"
+    }, 
+    "type": "bsDuel.DuelGame"
+   }, 
+   {
+    "settings": {
+     "Allow gloves and shields": false, 
+     "Allow negative score": false, 
+     "Epic Mode": true, 
+     "Keep Powerups Alive When Fighting": false, 
+     "Kills to Win Per Player": 8, 
+     "Preserve queue through games": false, 
+     "Reduce score on suicide": false, 
+     "Respawn Powerups When Fights Finish": false, 
+     "Time Limit": 180, 
+     "map": "Roundabout"
+    }, 
+    "type": "bsDuel.DuelGame"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": true, 
+     "Lives Per Player": 3, 
+     "Respawn Times": 0.25, 
+     "Time Limit": 120, 
+     "map": "Roundabout"
+    }, 
+    "type": "bsElimination.EliminationGame"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": 1, 
+     "Lives Per Player": 4, 
+     "Respawn Times": 0.25, 
+     "Time Limit": 120, 
+     "map": "Rampage"
+    }, 
+    "type": "bsElimination.EliminationGame"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": 1, 
+     "Lives Per Player": 3, 
+     "Respawn Times": 0.25, 
+     "Time Limit": 120, 
+     "map": "Monkey Face"
+    }, 
+    "type": "bsElimination.EliminationGame"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": 1, 
+     "Lives Per Player": 3, 
+     "Respawn Times": 0.25, 
+     "Time Limit": 120, 
+     "map": "Football Stadium"
+    }, 
+    "type": "bsElimination.EliminationGame"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": 1, 
+     "Lives Per Player": 3, 
+     "Respawn Times": 0.25, 
+     "Time Limit": 120, 
+     "map": "Doom Shroom"
+    }, 
+    "type": "bsElimination.EliminationGame"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": 1, 
+     "Lives Per Player": 3, 
+     "Respawn Times": 0.25, 
+     "Time Limit": 120, 
+     "map": "Courtyard"
+    }, 
+    "type": "bsElimination.EliminationGame"
+   }, 
+   {
+    "settings": {
+     "Chosen One Gets Gloves": true, 
+     "Chosen One Gets Shield": false, 
+     "Chosen One Time": 20, 
+     "Epic Mode": true, 
+     "Respawn Times": 0.25, 
+     "Time Limit": 120, 
+     "map": "Courtyard"
+    }, 
+    "type": "bsChosenOne.ChosenOneGame"
+   }, 
+   {
+    "settings": {
+     "Chosen One Gets Gloves": true, 
+     "Chosen One Gets Shield": false, 
+     "Chosen One Time": 20, 
+     "Epic Mode": 1, 
+     "Respawn Times": 0.25, 
+     "Time Limit": 120, 
+     "map": "Football Stadium"
+    }, 
+    "type": "bsChosenOne.ChosenOneGame"
+   }, 
+   {
+    "settings": {
+     "Chosen One Gets Gloves": true, 
+     "Chosen One Gets Shield": 0, 
+     "Chosen One Time": 20, 
+     "Epic Mode": 1, 
+     "Respawn Times": 0.25, 
+     "Time Limit": 120, 
+     "map": "Rampage"
+    }, 
+    "type": "bsChosenOne.ChosenOneGame"
+   }, 
+   {
+    "settings": {
+     "Chosen One Gets Gloves": true, 
+     "Chosen One Gets Shield": 0, 
+     "Chosen One Time": 20, 
+     "Epic Mode": 1, 
+     "Respawn Times": 0.25, 
+     "Time Limit": 120, 
+     "map": "Roundabout"
+    }, 
+    "type": "bsChosenOne.ChosenOneGame"
+   }, 
+   {
+    "settings": {
+     "Chosen One Gets Gloves": true, 
+     "Chosen One Gets Shield": false, 
+     "Chosen One Time": 20, 
+     "Epic Mode": 1, 
+     "Respawn Times": 0.25, 
+     "Time Limit": 120, 
+     "map": "The Pad"
+    }, 
+    "type": "bsChosenOne.ChosenOneGame"
+   }, 
+   {
+    "settings": {
+     "Chosen One Gets Gloves": true, 
+     "Chosen One Gets Shield": false, 
+     "Chosen One Time": 20, 
+     "Epic Mode": 1, 
+     "Respawn Times": 0.25, 
+     "Time Limit": 120, 
+     "map": "Doom Shroom"
+    }, 
+    "type": "bsChosenOne.ChosenOneGame"
+   }, 
+   {
+    "settings": {
+     "Chosen One Gets Gloves": true, 
+     "Chosen One Gets Shield": false, 
+     "Chosen One Time": 20, 
+     "Epic Mode": 1, 
+     "Respawn Times": 0.25, 
+     "Time Limit": 120, 
+     "map": "Football Stadium"
+    }, 
+    "type": "bsChosenOne.ChosenOneGame"
+   }, 
+   {
+    "settings": {
+     "Chosen One Gets Gloves": true, 
+     "Chosen One Gets Shield": 0, 
+     "Chosen One Time": 20, 
+     "Epic Mode": 1, 
+     "Respawn Times": 0.25, 
+     "Time Limit": 120, 
+     "map": "Monkey Face"
+    }, 
+    "type": "bsChosenOne.ChosenOneGame"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": true, 
+     "Lives Per Player": 3, 
+     "Respawn Times": 0.25, 
+     "Time Limit": 120, 
+     "map": "The Pad"
+    }, 
+    "type": "bsElimination.EliminationGame"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": 1, 
+     "Lives Per Player": 3, 
+     "Respawn Times": 0.25, 
+     "Time Limit": 120, 
+     "map": "Step Right Up"
+    }, 
+    "type": "bsElimination.EliminationGame"
+   }
+  ], 
+  "platlistDuel": [
+   {
+    "settings": {
+     "Allow gloves and shields": false, 
+     "Allow negative score": false, 
+     "Epic Mode": true, 
+     "Keep Powerups Alive When Fighting": true, 
+     "Kills to Win Per Player": 10, 
+     "Preserve queue through games": true, 
+     "Reduce score on suicide": false, 
+     "Respawn Powerups When Fights Finish": true, 
+     "Time Limit": 120, 
+     "map": "Rampage"
+    }, 
+    "type": "bsDuel.DuelGame"
+   }, 
+   {
+    "settings": {
+     "Allow gloves and shields": false, 
+     "Allow negative score": false, 
+     "Epic Mode": 1, 
+     "Keep Powerups Alive When Fighting": true, 
+     "Kills to Win Per Player": 10, 
+     "Preserve queue through games": true, 
+     "Reduce score on suicide": false, 
+     "Respawn Powerups When Fights Finish": true, 
+     "Time Limit": 120, 
+     "map": "Roundabout"
+    }, 
+    "type": "bsDuel.DuelGame"
+   }, 
+   {
+    "settings": {
+     "Allow gloves and shields": false, 
+     "Allow negative score": false, 
+     "Epic Mode": 1, 
+     "Keep Powerups Alive When Fighting": true, 
+     "Kills to Win Per Player": 10, 
+     "Preserve queue through games": true, 
+     "Reduce score on suicide": false, 
+     "Respawn Powerups When Fights Finish": true, 
+     "Time Limit": 120, 
+     "map": "Monkey Face"
+    }, 
+    "type": "bsDuel.DuelGame"
+   }, 
+   {
+    "settings": {
+     "Allow gloves and shields": false, 
+     "Allow negative score": false, 
+     "Epic Mode": 1, 
+     "Keep Powerups Alive When Fighting": true, 
+     "Kills to Win Per Player": 10, 
+     "Preserve queue through games": true, 
+     "Reduce score on suicide": false, 
+     "Respawn Powerups When Fights Finish": true, 
+     "Time Limit": 120, 
+     "map": "Courtyard"
+    }, 
+    "type": "bsDuel.DuelGame"
+   }, 
+   {
+    "settings": {
+     "Allow gloves and shields": false, 
+     "Allow negative score": false, 
+     "Epic Mode": 1, 
+     "Keep Powerups Alive When Fighting": true, 
+     "Kills to Win Per Player": 10, 
+     "Preserve queue through games": true, 
+     "Reduce score on suicide": false, 
+     "Respawn Powerups When Fights Finish": true, 
+     "Time Limit": 120, 
+     "map": "Bridgit"
+    }, 
+    "type": "bsDuel.DuelGame"
+   }
+  ], 
+  "smash": [
+   {
+    "settings": {
+     "Epic Mode": true, 
+     "Lives (0 = Unlimited)": 5, 
+     "Time Limit": 120, 
+     "map": "Rampage"
+    }, 
+    "type": "smash.SuperSmash"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": true, 
+     "Lives (0 = Unlimited)": 5, 
+     "Time Limit": 120, 
+     "map": "Football Stadium"
+    }, 
+    "type": "smash.SuperSmash"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": true, 
+     "Lives (0 = Unlimited)": 5, 
+     "Time Limit": 120, 
+     "map": "Courtyard"
+    }, 
+    "type": "smash.SuperSmash"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": true, 
+     "Lives (0 = Unlimited)": 5, 
+     "Time Limit": 120, 
+     "map": "The Pad"
+    }, 
+    "type": "smash.SuperSmash"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": true, 
+     "Lives (0 = Unlimited)": 5, 
+     "Time Limit": 120, 
+     "map": "Step Right Up"
+    }, 
+    "type": "smash.SuperSmash"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": true, 
+     "Lives (0 = Unlimited)": 5, 
+     "Time Limit": 120, 
+     "map": "Doom Shroom"
+    }, 
+    "type": "smash.SuperSmash"
+   }
+  ], 
+  "smash online": [
+   {
+    "settings": {
+     "Epic Mode": true, 
+     "Lives (0 = Unlimited)": 4, 
+     "Time Limit": 60, 
+     "map": "Happy Thoughts"
+    }, 
+    "type": "smash.SuperSmash"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": true, 
+     "Lives (0 = Unlimited)": 4, 
+     "Time Limit": 120, 
+     "map": "Party"
+    }, 
+    "type": "smash.SuperSmash"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": true, 
+     "Lives (0 = Unlimited)": 4, 
+     "Time Limit": 120, 
+     "map": "Negro Y Blanco"
+    }, 
+    "type": "smash.SuperSmash"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": true, 
+     "Lives (0 = Unlimited)": 4, 
+     "Time Limit": 120, 
+     "map": "Lago Frigido!!"
+    }, 
+    "type": "smash.SuperSmash"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": true, 
+     "Lives (0 = Unlimited)": 4, 
+     "Time Limit": 120, 
+     "map": "Mapa1"
+    }, 
+    "type": "smash.SuperSmash"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": true, 
+     "Lives (0 = Unlimited)": 4, 
+     "Time Limit": 120, 
+     "map": "Monkey Face"
+    }, 
+    "type": "smash.SuperSmash"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": true, 
+     "Lives (0 = Unlimited)": 4, 
+     "Time Limit": 60, 
+     "map": "Hockey Stadium"
+    }, 
+    "type": "smash.SuperSmash"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": true, 
+     "Lives (0 = Unlimited)": 4, 
+     "Time Limit": 120, 
+     "map": "Doom Shroom"
+    }, 
+    "type": "smash.SuperSmash"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": true, 
+     "Lives (0 = Unlimited)": 4, 
+     "Time Limit": 120, 
+     "map": "Step Right Up"
+    }, 
+    "type": "smash.SuperSmash"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": true, 
+     "Lives (0 = Unlimited)": 4, 
+     "Time Limit": 120, 
+     "map": "Tip Top"
+    }, 
+    "type": "smash.SuperSmash"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": true, 
+     "Lives (0 = Unlimited)": 4, 
+     "Time Limit": 120, 
+     "map": "Courtyard"
+    }, 
+    "type": "smash.SuperSmash"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": true, 
+     "Lives (0 = Unlimited)": 4, 
+     "Time Limit": 60, 
+     "map": "Football Stadium"
+    }, 
+    "type": "smash.SuperSmash"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": true, 
+     "Lives (0 = Unlimited)": 4, 
+     "Time Limit": 120, 
+     "map": "Crag Castle"
+    }, 
+    "type": "smash.SuperSmash"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": true, 
+     "Lives (0 = Unlimited)": 4, 
+     "Time Limit": 60, 
+     "map": "Big G"
+    }, 
+    "type": "smash.SuperSmash"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": true, 
+     "Lives (0 = Unlimited)": 4, 
+     "Time Limit": 120, 
+     "map": "Roundabout"
+    }, 
+    "type": "smash.SuperSmash"
+   }
+  ], 
+  "torneo": [
+   {
+    "settings": {
+     "Epic Mode": 1, 
+     "Lives (0 = Unlimited)": 3, 
+     "Time Limit": 0, 
+     "map": "The Pad"
+    }, 
+    "type": "smash.SuperSmash"
+   }
+  ]
+ }, 
+ "Lang": "English", 
+ "Local Account Name": "Server10767777", 
+ "PSTR": 0, 
+ "Player Profiles": {
+  "__account__": {
+   "character": "Spaz", 
+   "color": [
+    0.5, 
+    0.25, 
+    1.0
+   ], 
+   "highlight": [
+    0.5, 
+    0.25, 
+    1.0
+   ]
+  }
+ }, 
+ "Port": 43210, 
+ "Show Tutorial": false, 
+ "Signed In Last Session": false, 
+ "Team Tournament Playlist Randomize": true, 
+ "Team Tournament Playlist Selection": "__default__", 
+ "Team Tournament Playlists": {
+  "Epix Boxing": [
+   {
+    "settings": {
+     "Epic Mode": true, 
+     "Respawn Times": 0.25, 
+     "Score to Win": 3, 
+     "Time Limit": 0, 
+     "map": "Bridgit"
+    }, 
+    "type": "bsAssault.AssaultGame"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": 1, 
+     "Lives (0 = Unlimited)": 3, 
+     "Time Limit": 0, 
+     "map": "Step Right Up"
+    }, 
+    "type": "smash.SuperSmash"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": 1, 
+     "Lives (0 = Unlimited)": 3, 
+     "Time Limit": 0, 
+     "map": "Courtyard"
+    }, 
+    "type": "smash.SuperSmash"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": 1, 
+     "Lives (0 = Unlimited)": 3, 
+     "Time Limit": 0, 
+     "map": "Doom Shroom"
+    }, 
+    "type": "smash.SuperSmash"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": 1, 
+     "Lives (0 = Unlimited)": 3, 
+     "Time Limit": 0, 
+     "map": "The Pad"
+    }, 
+    "type": "smash.SuperSmash"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": 1, 
+     "Lives (0 = Unlimited)": 3, 
+     "Time Limit": 0, 
+     "map": "Rampage"
+    }, 
+    "type": "smash.SuperSmash"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": 1, 
+     "KOs to Win Per Player": 5, 
+     "Respawn Times": 0.25, 
+     "Time Limit": 0, 
+     "map": "Football Stadium"
+    }, 
+    "type": "boxing.DeathMatchGame"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": 1, 
+     "Equip Boxing Gloves": true, 
+     "Equip Shield": false, 
+     "Include bomber bots": true, 
+     "Include extra bots": true, 
+     "Include melee bots": true, 
+     "Max Bots": 6, 
+     "Time Limit": 0, 
+     "map": "Rampage"
+    }, 
+    "type": "FallingBots.FallingBots"
+   }, 
+   {
+    "settings": {
+     "Balance Total Lives": false, 
+     "Epic Mode": true, 
+     "Lives Per Player": 1, 
+     "Respawn Times": 1.0, 
+     "Solo Mode": true, 
+     "Time Limit": 0, 
+     "map": "Monkey Face"
+    }, 
+    "type": "bsElimination.EliminationGame"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": 1, 
+     "Flag Idle Return Time": 30, 
+     "Flag Touch Return Time": 0, 
+     "Respawn Times": 0.25, 
+     "Score to Win": 3, 
+     "Time Limit": 0, 
+     "map": "Roundabout"
+    }, 
+    "type": "bsCaptureTheFlag.CTFGame"
+   }, 
+   {
+    "settings": {
+     "Balance Total Lives": 0, 
+     "Epic Mode": 1, 
+     "Lives Per Player": 1, 
+     "Respawn Times": 1.0, 
+     "Solo Mode": 1, 
+     "Time Limit": 0, 
+     "map": "Rampage"
+    }, 
+    "type": "bsElimination.EliminationGame"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": true, 
+     "Kills to Win Per Player": 5, 
+     "Respawn Times": 0.25, 
+     "Time Limit": 0, 
+     "map": "Courtyard"
+    }, 
+    "type": "bsDeathMatch.DeathMatchGame"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": true, 
+     "Kills to Win Per Player": 5, 
+     "Respawn Times": 0.25, 
+     "Time Limit": 0, 
+     "map": "Football Stadium"
+    }, 
+    "type": "bsDeathMatch.DeathMatchGame"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": 1, 
+     "Respawn Times": 0.25, 
+     "Score to Win": 3, 
+     "Time Limit": 0, 
+     "map": "Step Right Up"
+    }, 
+    "type": "bsAssault.AssaultGame"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": 1, 
+     "Kills to Win Per Player": 5, 
+     "Respawn Times": 0.25, 
+     "Time Limit": 0, 
+     "map": "The Pad"
+    }, 
+    "type": "bsDeathMatch.DeathMatchGame"
+   }
+  ], 
+  "My Teams Playlist": [
+   {
+    "settings": {
+     "Allow negative score": true, 
+     "Epic Mode": true, 
+     "Keep Powerups Alive When Fighting": true, 
+     "Kills to Win Per Team": 10, 
+     "Preserve queue through games": true, 
+     "Reduce score on suicide": true, 
+     "Respawn Powerups When Fights Finish": false, 
+     "Time Limit": 180, 
+     "Tint Gameplay Colour": 0.25, 
+     "map": "Rampage"
+    }, 
+    "type": "Duel.DuelGame"
+   }, 
+   {
+    "settings": {
+     "Hold Time": 30, 
+     "Respawn Times": 0.5, 
+     "Time Limit": 120, 
+     "map": "Rampage"
+    }, 
+    "type": "bsKeepAway.KeepAwayGame"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": 1, 
+     "Respawn Times": 0.25, 
+     "Score to Win": 3, 
+     "Time Limit": 120, 
+     "map": "Monkey Face"
+    }, 
+    "type": "bsAssault.AssaultGame"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": 1, 
+     "Respawn Times": 0.5, 
+     "Score to Win": 3, 
+     "Time Limit": 120, 
+     "map": "Bridgit"
+    }, 
+    "type": "bsAssault.AssaultGame"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": true, 
+     "Kills to Win Per Player": 5, 
+     "Respawn Times": 0.5, 
+     "Time Limit": 120, 
+     "map": "Courtyard"
+    }, 
+    "type": "bsDeathMatch.DeathMatchGame"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": 1, 
+     "Kills to Win Per Player": 5, 
+     "Respawn Times": 0.5, 
+     "Time Limit": 120, 
+     "map": "The Pad"
+    }, 
+    "type": "bsDeathMatch.DeathMatchGame"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": 1, 
+     "Kills to Win Per Player": 10, 
+     "Respawn Times": 0.25, 
+     "Time Limit": 120, 
+     "map": "Roundabout"
+    }, 
+    "type": "bsDeathMatch.DeathMatchGame"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": 1, 
+     "Flag Idle Return Time": 10, 
+     "Flag Touch Return Time": 3, 
+     "Respawn Times": 0.5, 
+     "Score to Win": 3, 
+     "Time Limit": 120, 
+     "map": "Roundabout"
+    }, 
+    "type": "bsCaptureTheFlag.CTFGame"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": 1, 
+     "Flag Idle Return Time": 10, 
+     "Flag Touch Return Time": 3, 
+     "Respawn Times": 1.0, 
+     "Score to Win": 3, 
+     "Time Limit": 120, 
+     "map": "Bridgit"
+    }, 
+    "type": "bsCaptureTheFlag.CTFGame"
+   }, 
+   {
+    "settings": {
+     "Chosen One Gets Gloves": 0, 
+     "Chosen One Gets Shield": false, 
+     "Chosen One Time": 30, 
+     "Epic Mode": true, 
+     "Respawn Times": 0.5, 
+     "Time Limit": 120, 
+     "map": "Step Right Up"
+    }, 
+    "type": "bsChosenOne.ChosenOneGame"
+   }, 
+   {
+    "settings": {
+     "Chosen One Gets Gloves": 0, 
+     "Chosen One Gets Shield": false, 
+     "Chosen One Time": 30, 
+     "Epic Mode": true, 
+     "Respawn Times": 0.5, 
+     "Time Limit": 120, 
+     "map": "Rampage"
+    }, 
+    "type": "bsChosenOne.ChosenOneGame"
+   }, 
+   {
+    "settings": {
+     "Balance Total Lives": 1, 
+     "Epic Mode": 1, 
+     "Lives Per Player": 3, 
+     "Respawn Times": 0.5, 
+     "Solo Mode": false, 
+     "Time Limit": 120, 
+     "map": "Courtyard"
+    }, 
+    "type": "bsElimination.EliminationGame"
+   }, 
+   {
+    "settings": {
+     "Chosen One Gets Gloves": false, 
+     "Chosen One Gets Shield": false, 
+     "Chosen One Time": 30, 
+     "Epic Mode": true, 
+     "Respawn Times": 0.5, 
+     "Time Limit": 120, 
+     "map": "Courtyard"
+    }, 
+    "type": "bsChosenOne.ChosenOneGame"
+   }, 
+   {
+    "settings": {
+     "Chosen One Gets Gloves": 0, 
+     "Chosen One Gets Shield": false, 
+     "Chosen One Time": 30, 
+     "Epic Mode": true, 
+     "Respawn Times": 0.5, 
+     "Time Limit": 120, 
+     "map": "The Pad"
+    }, 
+    "type": "bsChosenOne.ChosenOneGame"
+   }, 
+   {
+    "settings": {
+     "Chosen One Gets Gloves": 0, 
+     "Chosen One Gets Shield": false, 
+     "Chosen One Time": 30, 
+     "Epic Mode": true, 
+     "Respawn Times": 0.5, 
+     "Time Limit": 120, 
+     "map": "Monkey Face"
+    }, 
+    "type": "bsChosenOne.ChosenOneGame"
+   }, 
+   {
+    "settings": {
+     "Chosen One Gets Gloves": 0, 
+     "Chosen One Gets Shield": false, 
+     "Chosen One Time": 30, 
+     "Epic Mode": true, 
+     "Respawn Times": 0.5, 
+     "Time Limit": 120, 
+     "map": "Bridgit"
+    }, 
+    "type": "bsChosenOne.ChosenOneGame"
+   }, 
+   {
+    "settings": {
+     "Balance Total Lives": 1, 
+     "Epic Mode": 1, 
+     "Lives Per Player": 3, 
+     "Respawn Times": 0.5, 
+     "Solo Mode": false, 
+     "Time Limit": 120, 
+     "map": "Football Stadium"
+    }, 
+    "type": "bsElimination.EliminationGame"
+   }, 
+   {
+    "settings": {
+     "Balance Total Lives": 1, 
+     "Epic Mode": 1, 
+     "Lives Per Player": 4, 
+     "Respawn Times": 0.5, 
+     "Solo Mode": false, 
+     "Time Limit": 120, 
+     "map": "Rampage"
+    }, 
+    "type": "bsElimination.EliminationGame"
+   }, 
+   {
+    "settings": {
+     "Balance Total Lives": 1, 
+     "Epic Mode": 1, 
+     "Lives Per Player": 3, 
+     "Respawn Times": 0.5, 
+     "Solo Mode": false, 
+     "Time Limit": 120, 
+     "map": "Monkey Face"
+    }, 
+    "type": "bsElimination.EliminationGame"
+   }, 
+   {
+    "settings": {
+     "Balance Total Lives": 1, 
+     "Epic Mode": 1, 
+     "Lives Per Player": 3, 
+     "Respawn Times": 0.5, 
+     "Solo Mode": false, 
+     "Time Limit": 120, 
+     "map": "Doom Shroom"
+    }, 
+    "type": "bsElimination.EliminationGame"
+   }, 
+   {
+    "settings": {
+     "Balance Total Lives": 1, 
+     "Epic Mode": 1, 
+     "Lives Per Player": 3, 
+     "Respawn Times": 0.5, 
+     "Solo Mode": false, 
+     "Time Limit": 120, 
+     "map": "The Pad"
+    }, 
+    "type": "bsElimination.EliminationGame"
+   }, 
+   {
+    "settings": {
+     "Allow negative score": true, 
+     "Epic Mode": true, 
+     "Keep Powerups Alive When Fighting": true, 
+     "Kills to Win Per Team": 10, 
+     "Preserve queue through games": true, 
+     "Reduce score on suicide": true, 
+     "Respawn Powerups When Fights Finish": true, 
+     "Time Limit": 180, 
+     "Tint Gameplay Colour": 0.25, 
+     "map": "Monkey Face"
+    }, 
+    "type": "Duel.DuelGame"
+   }, 
+   {
+    "settings": {
+     "Allow negative score": true, 
+     "Epic Mode": true, 
+     "Keep Powerups Alive When Fighting": true, 
+     "Kills to Win Per Team": 10, 
+     "Preserve queue through games": true, 
+     "Reduce score on suicide": true, 
+     "Respawn Powerups When Fights Finish": true, 
+     "Time Limit": 180, 
+     "Tint Gameplay Colour": 0.25, 
+     "map": "Roundabout"
+    }, 
+    "type": "Duel.DuelGame"
+   }, 
+   {
+    "settings": {
+     "Allow negative score": true, 
+     "Epic Mode": true, 
+     "Keep Powerups Alive When Fighting": true, 
+     "Kills to Win Per Team": 10, 
+     "Preserve queue through games": true, 
+     "Reduce score on suicide": true, 
+     "Respawn Powerups When Fights Finish": true, 
+     "Time Limit": 180, 
+     "Tint Gameplay Colour": 0.25, 
+     "map": "Courtyard"
+    }, 
+    "type": "Duel.DuelGame"
+   }
+  ], 
+  "Sasa epic teams": [
+   {
+    "settings": {
+     "Epic Mode": 1, 
+     "Respawn Times": 0.5, 
+     "Score to Win": 3, 
+     "Time Limit": 0, 
+     "map": "The Pad"
+    }, 
+    "type": "bsAssault.AssaultGame"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": true, 
+     "Respawn Times": 0.5, 
+     "Score to Win": 10, 
+     "Speed": false, 
+     "Time Limit": 300, 
+     "map": "soccer"
+    }, 
+    "type": "bsSoccer.SoccerGame"
+   }, 
+   {
+    "settings": {
+     "Night Mode": 0, 
+     "Respawn Times": 0.75, 
+     "Score to Win": 10, 
+     "Time Limit": 0, 
+     "map": "Football Stadium"
+    }, 
+    "type": "BigBallGame.BigBallGame"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": 1, 
+     "KOs to Win Per Player": 5, 
+     "Respawn Times": 0.5, 
+     "Time Limit": 0, 
+     "map": "Doom Shroom"
+    }, 
+    "type": "boxing.DeathMatchGame"
+   }, 
+   {
+    "settings": {
+     "Chosen One Gets Gloves": true, 
+     "Chosen One Gets Shield": false, 
+     "Chosen One Time": 20, 
+     "Epic Mode": true, 
+     "Respawn Times": 0.5, 
+     "Time Limit": 0, 
+     "map": "Football Stadium"
+    }, 
+    "type": "bsChosenOne.ChosenOneGame"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": 1, 
+     "Respawn Times": 1.0, 
+     "Score to Win": 2, 
+     "Time Limit": 0, 
+     "map": "Step Right Up"
+    }, 
+    "type": "bsAssault.AssaultGame"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": 1, 
+     "Respawn Times": 0.5, 
+     "Time Limit": 0, 
+     "map": "Zigzag"
+    }, 
+    "type": "bsConquest.ConquestGame"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": 1, 
+     "Kills to Win Per Player": 5, 
+     "Respawn Times": 0.5, 
+     "Time Limit": 0, 
+     "map": "Roundabout"
+    }, 
+    "type": "bsDeathMatch.DeathMatchGame"
+   }, 
+   {
+    "settings": {
+     "Allow negative score": false, 
+     "Epic Mode": 1, 
+     "Keep Powerups Alive When Fighting": true, 
+     "Kills to Win Per Team": 20, 
+     "Preserve queue through games": true, 
+     "Reduce score on suicide": false, 
+     "Respawn Powerups When Fights Finish": true, 
+     "Time Limit": 0, 
+     "map": "Rampage"
+    }, 
+    "type": "bsDuel.DuelGame"
+   }, 
+   {
+    "settings": {
+     "Balance Total Lives": 1, 
+     "Epic Mode": 1, 
+     "Lives Per Player": 1, 
+     "Respawn Times": 0.5, 
+     "Solo Mode": 1, 
+     "Time Limit": 0, 
+     "map": "Roundabout"
+    }, 
+    "type": "bsElimination.EliminationGame"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": 1, 
+     "Equip Boxing Gloves": true, 
+     "Equip Shield": false, 
+     "Include bomber bots": true, 
+     "Include extra bots": true, 
+     "Include melee bots": true, 
+     "Max Bots": 6, 
+     "Time Limit": 0, 
+     "map": "Rampage"
+    }, 
+    "type": "FallingBots.FallingBots"
+   }, 
+   {
+    "settings": {
+     "Respawn Times": 0.5, 
+     "Score to Win": 21, 
+     "Time Limit": 0, 
+     "map": "Football Stadium"
+    }, 
+    "type": "bsFootball.FootballTeamGame"
+   }, 
+   {
+    "settings": {
+     "Balance Total Lives": 1, 
+     "Epic Mode": 1, 
+     "Lives Per Player": 1, 
+     "Respawn Times": 0.5, 
+     "Solo Mode": false, 
+     "Time Limit": 0, 
+     "map": "Crag Castle"
+    }, 
+    "type": "GravityFalls.GravityFalls"
+   }, 
+   {
+    "settings": {
+     "Enable Bombs": 1, 
+     "Max Mines": 80, 
+     "Mines per Second": 5, 
+     "One-Way Trip": false, 
+     "Respawn Times": 0.5, 
+     "Score to Win": 1, 
+     "Start Mines": 40, 
+     "Time Limit": 120, 
+     "map": "Football Stadium"
+    }, 
+    "type": "HazardousCargo.HazardousCargo"
+   }, 
+   {
+    "settings": {
+     "Enable Bombs": true, 
+     "Infection Spread Rate": 0.02, 
+     "Max Infected Size": 6, 
+     "Max Size Increases Every": 20, 
+     "Mines": 10, 
+     "Sec/Extra Mine": 10, 
+     "map": "Rampage"
+    }, 
+    "type": "Infection.Infection"
+   }, 
+   {
+    "settings": {
+     "Bomb Spawning": 2000, 
+     "Entire Team Must Finish": false, 
+     "Epic Mode": 1, 
+     "Laps": 1, 
+     "Mine Spawning": 4000, 
+     "Time Limit": 0, 
+     "map": "Big G"
+    }, 
+    "type": "bsRace.RaceGame"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": 1, 
+     "Kills to Win Per Player": 5, 
+     "Respawn Times": 0.5, 
+     "Snowball Rate": 300, 
+     "Snowballs Bust": true, 
+     "Snowballs Melt": true, 
+     "Time Limit": 0, 
+     "map": "The Pad"
+    }, 
+    "type": "SnowBallFight.SnowBallFightGame"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": 1, 
+     "KOs to Win Per Player": 5, 
+     "Respawn Times": 0.5, 
+     "Time Limit": 0, 
+     "map": "Happy Thoughts"
+    }, 
+    "type": "Super fighter.DeathMatchGame"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": 1, 
+     "Lives (0 = Unlimited)": 2, 
+     "Time Limit": 0, 
+     "map": "Courtyard"
+    }, 
+    "type": "smash.SuperSmash"
+   }, 
+   {
+    "settings": {
+     "Balance Total Lives": 1, 
+     "Epic Mode": 1, 
+     "Lives Per Player": 1, 
+     "Max Zombies": 10, 
+     "Respawn Times": 0.5, 
+     "Solo Mode": false, 
+     "Time Limit": 120, 
+     "map": "Doom Shroom"
+    }, 
+    "type": "ZombieHorde.ZombieHorde"
+   }
+  ], 
+  "Solo Captura la Bandera copia 5": [
+   {
+    "settings": {
+     "Epic Mode": false, 
+     "Flag Idle Return Time": 30, 
+     "Flag Touch Return Time": 0, 
+     "Respawn Times": 1.0, 
+     "Score to Win": 3, 
+     "Time Limit": 600, 
+     "map": "Bridgit"
+    }, 
+    "type": "bsCaptureTheFlag.CTFGame"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": false, 
+     "Flag Idle Return Time": 30, 
+     "Flag Touch Return Time": 0, 
+     "Respawn Times": 1.0, 
+     "Score to Win": 2, 
+     "Time Limit": 600, 
+     "map": "Roundabout"
+    }, 
+    "type": "bsCaptureTheFlag.CTFGame"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": false, 
+     "Flag Idle Return Time": 30, 
+     "Flag Touch Return Time": 3, 
+     "Respawn Times": 1.0, 
+     "Score to Win": 2, 
+     "Time Limit": 300, 
+     "map": "Tip Top"
+    }, 
+    "type": "bsCaptureTheFlag.CTFGame"
+   }
+  ]
+ }, 
+ "Telnet Password": "changeme", 
+ "Telnet Port": 3478, 
+ "effectsMod": {
+  "color": true, 
+  "deathEffect": "fly", 
+  "effect": "none", 
+  "spawnEffect": "in", 
+  "tab": "info"
+ }, 
+ "launchCount": 687, 
+ "lc14": 1, 
+ "lc14146": 1, 
+ "lc14173": 1, 
+ "lc14292": 1, 
+ "lc14c": 1
+}
