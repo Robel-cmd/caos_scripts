@@ -26,7 +26,7 @@ class Icon(bsElimination.Icon):
 class PowBox(bsBomb.Bomb):
     def __init__(self, position=(0, 1, 0), velocity=(0, 0, 0)):
         bsBomb.Bomb.__init__(self, position, velocity,
-                        bombType='tnt', blastRadius=2.5,
+                        bombType='tnt', blastRadius=3.5,
                         sourcePlayer=None, owner=None)
         self.setPowText()
 
@@ -279,11 +279,11 @@ class PlayerSpaz_Smash(bs.PlayerSpaz):
         self.isDead = True
         if self.multiplyer > 1.25:
             blastType = 'tnt'
-            radius = 10
+            radius = 0
         else:
             # penalty for killing people with low multiplyer
             blastType = 'tnt'
-            radius = 5
+            radius = 0
 
         bs.Blast(position=self.node.position, blastRadius=radius, blastType=blastType).autoRetain()
 
