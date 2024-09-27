@@ -6,4 +6,4 @@ config['sessionType'] = 'ffa'
 config['maxPartySize'] = 15
 config['port'] = 43210
 config['playlistCode'] = 434248
-config['statsURL'] = 'https://discord.gg/8b858RBdEy'
+config['statsURL'] = 'https://discord.gg/MyF6HxfcSp'
