@@ -1263,6 +1263,10 @@ class chatOptions(object):
                                 except:
                                     bsInternal._chatMessage('PLAYER NOT FOUND')
 
+                            elif m == 'death':
+                                    i.actor.node.handleMessage(
+                                    bs.DieMessage())
+
                             elif m == 'reflections':
                                 if len(a) < 2:
                                     bsInternal._chatMessage(
