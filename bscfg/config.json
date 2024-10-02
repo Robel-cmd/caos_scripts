@@ -156,6 +156,143 @@
  "Free-for-All Playlist Randomize": true, 
  "Free-for-All Playlist Selection": "Mijs", 
  "Free-for-All Playlists": {
+  "FREE FOR ALL BY GALAXIE": [
+   {
+    "settings": {
+     "Allow Negative Scores": false, 
+     "Epic Mode": 1, 
+     "Kills to Win Per Player": 10, 
+     "Respawn Times": 0.5, 
+     "Time Limit": 0, 
+     "map": "The Pad"
+    }, 
+    "type": "bsDeathMatch.DeathMatchGame"
+   }, 
+   {
+    "settings": {
+     "Hold Time": 20, 
+     "Respawn Times": 1.0, 
+     "Time Limit": 0, 
+     "map": "Football Stadium"
+    }, 
+    "type": "bsKeepAway.KeepAwayGame"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": 1, 
+     "Lives Per Player": 1, 
+     "Respawn Times": 1.0, 
+     "Time Limit": 0, 
+     "map": "Rampage"
+    }, 
+    "type": "bsElimination.EliminationGame"
+   }, 
+   {
+    "settings": {
+     "Chosen One Gets Gloves": 0, 
+     "Chosen One Gets Shield": false, 
+     "Chosen One Time": 20, 
+     "Epic Mode": 1, 
+     "Respawn Times": 0.5, 
+     "Time Limit": 0, 
+     "map": "Courtyard"
+    }, 
+    "type": "bsChosenOne.ChosenOneGame"
+   }, 
+   {
+    "settings": {
+     "Allow Negative Scores": false, 
+     "Epic Mode": 1, 
+     "Kills to Win Per Player": 6, 
+     "Respawn Times": 1.0, 
+     "Time Limit": 0, 
+     "map": "Football Stadium"
+    }, 
+    "type": "bsDeathMatch.DeathMatchGame"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": 1, 
+     "Lives Per Player": 2, 
+     "Respawn Times": 1.0, 
+     "Time Limit": 0, 
+     "map": "Hockey Stadium"
+    }, 
+    "type": "bsElimination.EliminationGame"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": 1, 
+     "Equip Boxing Gloves": true, 
+     "Equip Shield": false, 
+     "Include bomber bots": true, 
+     "Include extra bots": true, 
+     "Include melee bots": true, 
+     "Max Bots": 7, 
+     "Time Limit": 0, 
+     "map": "Rampage"
+    }, 
+    "type": "FallingBots.FallingBots"
+   }, 
+   {
+    "settings": {
+     "Allow Negative Scores": false, 
+     "Epic Mode": 1, 
+     "Kills to Win Per Player": 9, 
+     "Respawn Times": 0.5, 
+     "Time Limit": 0, 
+     "map": "Monkey Face"
+    }, 
+    "type": "bsDeathMatch.DeathMatchGame"
+   }, 
+   {
+    "settings": {
+     "Allow Negative Scores": false, 
+     "Epic Mode": 1, 
+     "Kills to Win Per Player": 10, 
+     "Respawn Times": 0.5, 
+     "Time Limit": 0, 
+     "map": "Hockey Stadium"
+    }, 
+    "type": "bsDeathMatch.DeathMatchGame"
+   }, 
+   {
+    "settings": {
+     "Chosen One Gets Gloves": 0, 
+     "Chosen One Gets Shield": false, 
+     "Chosen One Time": 20, 
+     "Epic Mode": 1, 
+     "Respawn Times": 0.5, 
+     "Time Limit": 0, 
+     "map": "Football Stadium"
+    }, 
+    "type": "bsChosenOne.ChosenOneGame"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": 1, 
+     "Equip Boxing Gloves": true, 
+     "Equip Shield": false, 
+     "Include bomber bots": true, 
+     "Include extra bots": true, 
+     "Include melee bots": true, 
+     "Max Bots": 6, 
+     "Time Limit": 0, 
+     "map": "Rampage"
+    }, 
+    "type": "FallingBots.FallingBots"
+   }, 
+   {
+    "settings": {
+     "Epic Mode": 1, 
+     "Lives Per Player": 2, 
+     "Respawn Times": 1.0, 
+     "Time Limit": 0, 
+     "map": "Bridgit"
+    }, 
+    "type": "bsElimination.EliminationGame"
+   }
+  ], 
   "LaZoeXD \u00a92024-2021": [
    {
     "settings": {
@@ -1842,15 +1979,6 @@
    }, 
    {
     "settings": {
-     "Hold Time": 30, 
-     "Respawn Times": 0.5, 
-     "Time Limit": 120, 
-     "map": "Rampage"
-    }, 
-    "type": "bsKeepAway.KeepAwayGame"
-   }, 
-   {
-    "settings": {
      "Epic Mode": 1, 
      "Respawn Times": 0.25, 
      "Score to Win": 3, 
@@ -2389,7 +2517,7 @@
   "spawnEffect": "in", 
   "tab": "info"
  }, 
- "launchCount": 687, 
+ "launchCount": 704, 
  "lc14": 1, 
  "lc14146": 1, 
  "lc14173": 1, 

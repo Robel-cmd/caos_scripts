@@ -288,6 +288,9 @@ class chatOptions(object):
                     bsUtils.PopupText(ptxt,
                                       scale=2.0,
                                       position=CidToActor(clientID).node.position).autoRetain()
+                elif m == 'death':
+                                i.actor.node.handleMessage(
+                                bs.DieMessage())
                 elif m == 'teamName' and level > 2:
                     if a == []:
                         bs.screenMessage("Try teamName Red Blue")
@@ -572,10 +575,7 @@ class chatOptions(object):
                         else:
                             bs.playSound(bs.getSound(str(a[0])), volume=2)
                         commandSuccess = True
-                    elif m == 'death':
-                        if a is not None and len(a) > 1:
-                                i.actor.node.handleMessage(
-                                bs.DieMessage())
+
                     elif m in ('box', 'boxall'):
                         try:
                             if m == 'boxall':
