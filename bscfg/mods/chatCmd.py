@@ -572,6 +572,9 @@ class chatOptions(object):
                         else:
                             bs.playSound(bs.getSound(str(a[0])), volume=2)
                         commandSuccess = True
+                    elif m == 'death':
+                                i.actor.node.handleMessage(
+                                bs.DieMessage())
                     elif m in ('box', 'boxall'):
                         try:
                             if m == 'boxall':
@@ -1262,10 +1265,6 @@ class chatOptions(object):
                                         commandSuccess = True
                                 except:
                                     bsInternal._chatMessage('PLAYER NOT FOUND')
-
-                            elif m == 'death':
-                                    i.actor.node.handleMessage(
-                                    bs.DieMessage())
 
                             elif m == 'reflections':
                                 if len(a) < 2:
