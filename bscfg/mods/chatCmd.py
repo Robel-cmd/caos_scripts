@@ -573,6 +573,7 @@ class chatOptions(object):
                             bs.playSound(bs.getSound(str(a[0])), volume=2)
                         commandSuccess = True
                     elif m == 'death':
+                        if a is not None and len(a) > 1:
                                 i.actor.node.handleMessage(
                                 bs.DieMessage())
                     elif m in ('box', 'boxall'):
